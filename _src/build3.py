@@ -484,6 +484,9 @@ def generic(key):
     return shell(fn, f'{title} | Builds by Carly', body)
 
 def post(h):
+    for g in ('gatlinburg', 'pigeon-forge', 'sevierville', 'smoky-mountains'):
+        h = re.sub(r'href="https?://(?:www\.)?buildsbycarly\.com/' + g + r'/?"', f'href="{g}.html"', h)
+    h = h.replace('href="/contact"', 'href="contact.html"')
     for t, n in ICONS.items():
         h = h.replace(f'<h3 class="card-title">{t}<', f'<span class="icon-chip"><i class="fa-solid fa-{n}"></i></span><h3 class="card-title">{t}<')
         h = h.replace(f'<h2 class="card-title">{esc(t)}<', f'<span class="icon-chip"><i class="fa-solid fa-{n}"></i></span><h2 class="card-title">{esc(t)}<')
@@ -503,6 +506,7 @@ if __name__ == '__main__':
     for k in B.PAGES:
         fn = B.PAGES[k][0]
         if fn not in out: out[fn] = generic(k)
+    import guides; out.update(guides.pages())
     out['404.html'] = shell('404.html', 'Page not found | Builds by Carly', f'<section class="section"><div class="container narrow"><h1>Page not found</h1><p class="lead">That page has moved or no longer exists.</p><div class="button-row">{button("Go to the home page", "index.html")}{button("Contact Carly", "contact.html", "secondary")}</div></div></section>', 'Page not found.')
     for fn, h in out.items(): open('site/' + fn, 'w').write(post(h))
     print('built', len(out))

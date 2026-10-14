@@ -436,3 +436,23 @@ body{font-size:1.125rem}
 @media(max-width:1023px) and (min-width:768px){.city-grid{grid-template-columns:1fr}.chart-grid{grid-template-columns:1fr}}
 @media(min-width:1024px){.mini-stats{grid-template-columns:repeat(4,minmax(0,1fr))}}
 @media(prefers-reduced-motion:reduce){.js [data-reveal]{opacity:1;transform:none}.bar-fill,.col-bar,.stack-seg{transform:none}.ring-fill{stroke-dasharray:var(--s) calc(100 - var(--s))}.donut-seg{stroke-dasharray:var(--p) calc(100 - var(--p))}}
+/* area guides */
+.quick-links{list-style:none;display:flex;flex-wrap:wrap;gap:10px;padding:0;margin:24px 0 0}
+.quick-links a{display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:10px 16px;border:1px solid var(--border);border-radius:999px;background:#fff;text-decoration:none;font-weight:500;font-size:.9375rem;transition:border-color .2s,color .2s,transform .2s,box-shadow .2s}
+.quick-links a i{color:var(--action)}
+.quick-links a:hover{border-color:var(--action);color:var(--action);transform:translateY(-2px);box-shadow:0 10px 20px -14px rgba(16,42,51,.5)}
+.landmark{padding:0;overflow:hidden;display:flex;flex-direction:column}
+.landmark img{width:100%;aspect-ratio:4/3;object-fit:cover;transition:transform .8s cubic-bezier(.2,.7,.2,1)}
+.landmark:hover img{transform:scale(1.05)}
+.landmark-body{padding:20px;display:flex;flex-direction:column;flex:1}
+.landmark-body p{flex:1}
+.facts-grid{display:grid;gap:12px;grid-template-columns:1fr}
+.fact{background:#fff;border:1px solid var(--border)!important;border-radius:14px;padding:0 18px;transition:box-shadow .25s,border-color .25s}
+.fact:hover{border-color:#c9b8a6!important;box-shadow:0 14px 30px -20px rgba(16,42,51,.4)}
+.fact summary{gap:14px;justify-content:flex-start}
+.fact summary::after{margin-left:auto}
+.fact .icon-chip{margin:0;width:38px;height:38px;font-size:.95rem}
+.fact-title{font-size:1.0625rem}
+.fact[open]{border-color:var(--action)!important}
+@media(min-width:768px){.facts-grid{grid-template-columns:repeat(2,minmax(0,1fr));align-items:start}}
+.ridge{top:-3px;height:73px}

@@ -1,0 +1,2857 @@
+{
+ "gatlinburg": {
+  "title": "Gatlinburg - Carly Bowlen",
+  "rows": [
+   {
+    "node": "6591b0413fe2d",
+    "bg": "url(\"https://brokerage.agent.wallacetn.com/files/2023/08/oakridge.jpg\")",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "overlay": "rgba(0, 0, 0, 0)",
+    "overlayImg": "linear-gradient(135deg, rgba(10, 34, 62, 0.95) 23%, rgba(201, 212, 208, 0.75) 94%)",
+    "groups": [
+     [
+      {
+       "w": "1280px",
+       "wpct": 100,
+       "bg": "none",
+       "bgc": "rgba(0, 0, 0, 0)",
+       "mods": [
+        {
+         "type": "rich-text",
+         "node": "6591b0413fe29",
+         "html": "<h3><span>GATLINBURG</span></h3>",
+         "font": "42px"
+        },
+        {
+         "type": "rich-text",
+         "node": "6591b0413fe2a",
+         "html": "<p><span>Gatlinburg is a charming mountain town that serves as a gateway to the Great Smoky Mountains National Park. Known for its scenic beauty, outdoor adventures, and rich Appalachian culture, Gatlinburg offers a unique blend of natural attractions and entertainment. From thrilling mountain coasters to tranquil nature walks, it's a destination that promises memorable experiences for every visitor.</span></p>",
+         "font": "16px"
+        }
+       ],
+       "sub": [
+        [
+         {
+          "w": "1280px",
+          "wpct": 100,
+          "bg": "none",
+          "bgc": "rgba(0, 0, 0, 0)",
+          "mods": [
+           {
+            "type": "html",
+            "node": "6591b1edc8bd9",
+            "html": "<div class=\"fl-module-content fl-node-content\"> <div class=\"fl-html\"> <a class=\"weatherwidget-io\" href=\"https://forecast7.com/en/35d71n83d51/gatlinburg/?unit=us\">GATLINBURG WEATHER<iframe class=\"weatherwidget-io-frame\" src=\"https://weatherwidget.io/w/\"></iframe></a> </div> </div>",
+            "text": "GATLINBURG WEATHER"
+           }
+          ],
+          "sub": []
+         }
+        ],
+        [
+         {
+          "w": "320px",
+          "wpct": 25,
+          "bg": "none",
+          "bgc": "rgba(0, 0, 0, 0)",
+          "mods": [
+           {
+            "type": "button",
+            "node": "6591b2b9b2831",
+            "text": "GOV WEBSITE",
+            "href": "https://www.gatlinburgtn.gov/"
+           }
+          ],
+          "sub": []
+         },
+         {
+          "w": "320px",
+          "wpct": 25,
+          "bg": "none",
+          "bgc": "rgba(0, 0, 0, 0)",
+          "mods": [
+           {
+            "type": "button",
+            "node": "6591b0c0dd3ac",
+            "text": "RESTAURANTS",
+            "href": "https://www.google.com/maps/search/Restaurants/@35.727438,-83.5394735,13z/data=!3m1!4b1?entry=ttu"
+           }
+          ],
+          "sub": []
+         },
+         {
+          "w": "320px",
+          "wpct": 25,
+          "bg": "none",
+          "bgc": "rgba(0, 0, 0, 0)",
+          "mods": [
+           {
+            "type": "button",
+            "node": "6591b3339fbfa",
+            "text": "MUSEUMS",
+            "href": "https://www.google.com/maps/search/Museums/@35.7273754,-83.4981881,13z/data=!3m1!4b1?entry=ttu"
+           }
+          ],
+          "sub": []
+         },
+         {
+          "w": "320px",
+          "wpct": 25,
+          "bg": "none",
+          "bgc": "rgba(0, 0, 0, 0)",
+          "mods": [
+           {
+            "type": "button",
+            "node": "6591b06c76e80",
+            "text": "THINGS TO DO",
+            "href": "https://www.google.com/maps/search/Things+to+do/@35.7273127,-83.5393018,13z?entry=ttu"
+           }
+          ],
+          "sub": []
+         }
+        ]
+       ]
+      }
+     ]
+    ]
+   },
+   {
+    "node": "6591b3c493712",
+    "bg": "none",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "overlay": "rgba(0, 0, 0, 0)",
+    "overlayImg": "none",
+    "groups": [
+     [
+      {
+       "w": "1280px",
+       "wpct": 100,
+       "bg": "none",
+       "bgc": "rgba(0, 0, 0, 0)",
+       "mods": [
+        {
+         "type": "rich-text",
+         "node": "6591b06c76e83",
+         "html": "<p><span>GATLINBURG </span><strong><span><span>FUN FACTS</span></span></strong></p>",
+         "font": "16px"
+        },
+        {
+         "type": "advanced-tabs",
+         "node": "6591b6296bb1a",
+         "html": "<div class=\"fl-module-content fl-node-content\"> <div class=\"uabb-module-content uabb-tabs uabb-tabs-layout-horizontal uabb-tabs-style-bar\"> <nav class=\"uabb-tabs-nav uabb-tabs-nav6591b6296bb1a\"> <ul> <li class=\"uabb-tab-current\"> <h4 class=\"uabb-tag-selected\"> <a class=\"uabb-tab-link\" href=\"javascript:void(0);\"><span class=\"uabb-tab-title\">RIPLEY'S AQUARIUM</span> </a> </h4> </li> <li class=\"\"> <h4 class=\"uabb-tag-selected\"> <a class=\"uabb-tab-link\" href=\"javascript:void(0);\"><span class=\"uabb-tab-title\">WEDDING DESTINATION</span> </a> </h4> </li> <li class=\"\"> <h4 class=\"uabb-tag-selected\"> <a class=\"uabb-tab-link\" href=\"javascript:void(0);\"><span class=\"uabb-tab-title\">SKI RESORT</span> </a> </h4> </li> <li class=\"\"> <h4 class=\"uabb-tag-selected\"> <a class=\"uabb-tab-link\" href=\"javascript:void(0);\"><span class=\"uabb-tab-title\">TOURISM DESTINATION</span> </a> </h4> </li> <li class=\"\"> <h4 class=\"uabb-tag-selected\"> <a class=\"uabb-tab-link\" href=\"javascript:void(0);\"><span class=\"uabb-tab-title\">A BIT OF HISTORY</span> </a> </h4> </li> <li class=\"\"> <h4 class=\"uabb-tag-selected\"> <a class=\"uabb-tab-link\" href=\"javascript:void(0);\"><span class=\"uabb-tab-title\">PANCAKE HOUSE</span> </a> </h4> </li> <li class=\"\"> <h4 class=\"uabb-tag-selected\"> <a class=\"uabb-tab-link\" href=\"javascript:void(0);\"><span class=\"uabb-tab-title\">MOONSHINE</span> </a> </h4> </li> <li class=\"\"> <h4 class=\"uabb-tag-selected\"> <a class=\"uabb-tab-link\" href=\"javascript:void(0);\"><span class=\"uabb-tab-title\">SKY BRIDGE</span> </a> </h4> </li> </ul> </nav> <div class=\"uabb-content-wrap uabb-content-wrap6591b6296bb1a\"> <div class=\"-0 section \"> <div class=\"uabb-tab-acc-title uabb-acc-0\"> <h4 class=\"uabb-title-tag\"> <span class=\"uabb-tab-title\">RIPLEY'S AQUARIUM</span> </h4> <span class=\"uabb-acc-icon\"><i class=\"ua-icon ua-icon-chevron-down2\"></i></span> </div> <div class=\"uabb-content uabb-tab-acc-content clearfix uabb-tabs-desc uabb-text-editor\"> <p><span><span>There Are More Fish in Ripley\u2019s Aquarium than People Who Live in Gatlinburg.&nbsp; </span><span>The city only has about 4,000 permanent residents. Meanwhile, Ripley\u2019s Aquarium is home to over 10,000 sea creatures.</span></span></p> </div> </div> <div class=\"-1 section \"> <div class=\"uabb-tab-acc-title uabb-acc-1\"> <h4 class=\"uabb-title-tag\"> <span class=\"uabb-tab-title\">WEDDING DESTINATION</span> </h4> <span class=\"uabb-acc-icon\"><i class=\"ua-icon ua-icon-chevron-down2\"></i></span> </div> <div class=\"uabb-content uabb-tab-acc-content clearfix uabb-tabs-desc uabb-text-editor\"> <p><span><span>Gatlinburg is the 2nd Most Popular Wedding Destination in the U.S.&nbsp; </span><span>The city hosts more weddings than any other location in America, with the exception of Las Vegas.</span></span></p> </div> </div> <div class=\"-2 section \"> <div class=\"uabb-tab-acc-title uabb-acc-2\"> <h4 class=\"uabb-title-tag\"> <span class=\"uabb-tab-title\">SKI RESORT</span> </h4> <span class=\"uabb-acc-icon\"><i class=\"ua-icon ua-icon-chevron-down2\"></i></span> </div> <div class=\"uabb-content uabb-tab-acc-content clearfix uabb-tabs-desc uabb-text-editor\"> <p><span>Gatlinburg is Home to Tennessee\u2019s Only Ski Resort.&nbsp; Gatlinburg, TN is the only place in the state where you can go skiing, snowboarding, and snow tubing</span></p> </div> </div> <div class=\"-3 section \"> <div class=\"uabb-tab-acc-title uabb-acc-3\"> <h4 class=\"uabb-title-tag\"> <span class=\"uabb-tab-title\">TOURISM DESTINATION</span> </h4> <span class=\"uabb-acc-icon\"><i class=\"ua-icon ua-icon-chevron-down2\"></i></span> </div> <div class=\"uabb-content uabb-tab-acc-content clearfix uabb-tabs-desc uabb-text-editor\"> <p><span>Gatlinburg receives over 11 million visitors per year</span></p> </div> </div> <div class=\"-4 section \"> <div class=\"uabb-tab-acc-title uabb-acc-4\"> <h4 class=\"uabb-title-tag\"> <span class=\"uabb-tab-title\">A BIT OF HISTORY</span> </h4> <span class=\"uabb-acc-icon\"><i class=\"ua-icon ua-icon-chevron-down2\"></i></span> </div> <div class=\"uabb-content uabb-tab-acc-content clearfix uabb-tabs-desc uabb-text-editor\"> <p><span>Gatlinburg\u2019s very first log cabin is still standing!&nbsp; Although the Cabin is no longer at its original location, it is still intact and open for viewing at the Gatlinburg Welcome Center (520 Parkway).</span></p> </div> </div> <div class=\"-5 section \"> <div class=\"uabb-tab-acc-title uabb-acc-5\"> <h4 class=\"uabb-title-tag\"> <span class=\"uabb-tab-title\">PANCAKE HOUSE</span> </h4> <span class=\"uabb-acc-icon\"><i class=\"ua-icon ua-icon-chevron-down2\"></i></span> </div> <div class=\"uabb-content uabb-tab-acc-content clearfix uabb-tabs-desc uabb-text-editor\"> <p><span><span>Gatlinburg is Home to Tennessee\u2019s First Pancake House.&nbsp; In 1960, the&nbsp;</span><a href=\"http://pancakepantry.com/\"><span>Pancake Pantry</span></a><span>&nbsp;opened its doors in Gatlinburg and this legendary restaurant is still in operation on the Parkway.</span></span></p> </div> </div> <div class=\"-6 section \"> <div class=\"uabb-tab-acc-title uabb-acc-6\"> <h4 class=\"uabb-title-tag\"> <span class=\"uabb-tab-title\">MOONSHINE</span> </h4> <span class=\"uabb-acc-icon\"><i class=\"ua-icon ua-icon-chevron-down2\"></i></span> </div> <div class=\"uabb-content uabb-tab-acc-content clearfix uabb-tabs-desc uabb-text-editor\"> <p><span>Moonshine Was Legalized in Gatlinburg in 2009.&nbsp; The unaged whiskey was known as \u201cmoonshine\u201d because it was often made by the light of the moon, in order to avoid the long arm of the law.&nbsp; &nbsp;Back in the day, farmers would turn their extra corn into whiskey so they could make some extra cash to support their families.&nbsp;</span></p> </div> </div> <div class=\"-7 section \"> <div class=\"uabb-tab-acc-title uabb-acc-7\"> <h4 class=\"uabb-title-tag\"> <span class=\"uabb-tab-title\">SKY BRIDGE</span> </h4> <span class=\"uabb-acc-icon\"><i class=\"ua-icon ua-icon-chevron-down2\"></i></span> </div> <div class=\"uabb-content uabb-tab-acc-content clearfix uabb-tabs-desc uabb-text-editor\"> <p><span>The Gatlinburg SkyBridge is the longest pedestrian cable bridge in North America.</span></p> </div> </div> </div><!-- /content --> </div><!-- /tabs --> </div>",
+         "text": "RIPLEY'S AQUARIUM\t\nWEDDING DESTINATION\t\nSKI RESORT\t\nTOURISM DESTINATION\t\nA BIT OF HISTORY\t\nPANCAKE HOUSE\t\nMOONSHINE\t\nSKY BRIDGE"
+        }
+       ],
+       "sub": []
+      }
+     ]
+    ]
+   },
+   {
+    "node": "6591b06c76e69",
+    "bg": "none",
+    "bgColor": "rgb(207, 216, 225)",
+    "overlay": "rgba(0, 0, 0, 0)",
+    "overlayImg": "none",
+    "groups": [
+     [
+      {
+       "w": "640px",
+       "wpct": 50,
+       "bg": "none",
+       "bgc": "rgba(0, 0, 0, 0)",
+       "mods": [
+        {
+         "type": "heading",
+         "node": "6591b06c76e88",
+         "text": "LANDMARKS",
+         "tag": "H3",
+         "font": "\"Semplicita Pro\"|16px"
+        },
+        {
+         "type": "rich-text",
+         "node": "6591b06c76e89",
+         "html": "<p><span>OBER MOUNTAIN</span></p>",
+         "font": "16px"
+        },
+        {
+         "type": "rich-text",
+         "node": "6591b06c76e8a",
+         "html": "<p><span>Ober Mountain in Gatlinburg, Tennessee, offers a unique blend of activities, attracting visitors in every season. With its enchanting winter ski slopes and lively summer trails, this destination is a magnet for those seeking both adventure and relaxation. The renowned aerial tramway and scenic hikes at Ober Mountain create experiences that guests cherish, ensuring a consistent flow of visitors. Discover the captivating appeal of Ober Mountain, a place where every season brings new reasons for guests to visit and revisit.</span></p>",
+         "font": "16px"
+        },
+        {
+         "type": "button",
+         "node": "6591b06c76e8b",
+         "text": "VISIT WEBSITE",
+         "href": "https://obermountain.com"
+        }
+       ],
+       "sub": []
+      },
+      {
+       "w": "640px",
+       "wpct": 50,
+       "bg": "none",
+       "bgc": "rgba(0, 0, 0, 0)",
+       "mods": [
+        {
+         "type": "photo",
+         "node": "6591bac938198",
+         "src": "https://buildsbycarly.com/files/2024/01/ober-mountian.jpg",
+         "alt": "ober-mountian"
+        }
+       ],
+       "sub": []
+      }
+     ],
+     [
+      {
+       "w": "640px",
+       "wpct": 50,
+       "bg": "none",
+       "bgc": "rgba(0, 0, 0, 0)",
+       "mods": [
+        {
+         "type": "photo",
+         "node": "6591b06c76e81",
+         "src": "https://buildsbycarly.com/files/2024/01/spaceneedle.jpg",
+         "alt": "spaceneedle"
+        }
+       ],
+       "sub": []
+      },
+      {
+       "w": "640px",
+       "wpct": 50,
+       "bg": "none",
+       "bgc": "rgba(0, 0, 0, 0)",
+       "mods": [
+        {
+         "type": "heading",
+         "node": "6591bb1a9f251",
+         "text": "LANDMARKS",
+         "tag": "H3",
+         "font": "\"Semplicita Pro\"|16px"
+        },
+        {
+         "type": "rich-text",
+         "node": "6591bb21f2361",
+         "html": "<p><span>SPACE NEEDLE</span></p>",
+         "font": "16px"
+        },
+        {
+         "type": "rich-text",
+         "node": "6591bb2604cf7",
+         "html": "<p><span>Gatlinburg's Space Needle stands as a beacon of excitement in the heart of the city. This iconic landmark offers breathtaking 360-degree views of the Smoky Mountains and downtown Gatlinburg, captivating visitors of all ages. Imagine a property nearby, where guests can step out to enjoy this and other local attractions like the bustling streets, unique shops, and vibrant cultural experiences. The Space Needle, an unmissable attraction, adds a special allure to the area, drawing visitors year-round for unforgettable moments.</span></p>",
+         "font": "16px"
+        },
+        {
+         "type": "button",
+         "node": "6591bb2aae98e",
+         "text": "VISIT WEBSITE",
+         "href": "https://www.gatlinburgspaceneedle.com"
+        }
+       ],
+       "sub": []
+      }
+     ],
+     [
+      {
+       "w": "640px",
+       "wpct": 50,
+       "bg": "none",
+       "bgc": "rgba(0, 0, 0, 0)",
+       "mods": [
+        {
+         "type": "heading",
+         "node": "6591bb54e08ab",
+         "text": "LANDMARKS",
+         "tag": "H3",
+         "font": "\"Semplicita Pro\"|16px"
+        },
+        {
+         "type": "rich-text",
+         "node": "6591bb594c4ae",
+         "html": "<p><span>SKY PARK</span></p>",
+         "font": "16px"
+        },
+        {
+         "type": "rich-text",
+         "node": "6591bb5e03f41",
+         "html": "<p><span>Skypark presents a world of adventure and natural splendor, a perfect draw for those who love the outdoors. This destination thrills visitors with its unique blend of outdoor activities and breathtaking scenery. Close to properties in this area, guests can immerse themselves in experiences like zip-lining, hiking, or simply enjoying panoramic views of the surrounding landscape. Skypark is not just a park; it's a year-round destination for families, thrill-seekers, and nature lovers, making every visit memorable.</span></p>",
+         "font": "16px"
+        },
+        {
+         "type": "button",
+         "node": "6591bb6104a9c",
+         "text": "VISIT WEBSITE",
+         "href": "https://www.gatlinburgskypark.com"
+        }
+       ],
+       "sub": []
+      },
+      {
+       "w": "640px",
+       "wpct": 50,
+       "bg": "none",
+       "bgc": "rgba(0, 0, 0, 0)",
+       "mods": [
+        {
+         "type": "photo",
+         "node": "6591b06c76e87",
+         "src": "https://buildsbycarly.com/files/2024/01/skypark.jpg",
+         "alt": "skypark"
+        }
+       ],
+       "sub": []
+      }
+     ],
+     [
+      {
+       "w": "640px",
+       "wpct": 50,
+       "bg": "none",
+       "bgc": "rgba(0, 0, 0, 0)",
+       "mods": [
+        {
+         "type": "photo",
+         "node": "6591bc92f364e",
+         "src": "https://buildsbycarly.com/files/2024/01/anakeesta.jpg",
+         "alt": "anakeesta"
+        }
+       ],
+       "sub": []
+      },
+      {
+       "w": "640px",
+       "wpct": 50,
+       "bg": "none",
+       "bgc": "rgba(0, 0, 0, 0)",
+       "mods": [
+        {
+         "type": "heading",
+         "node": "6591bc9882fd3",
+         "text": "LANDMARKS",
+         "tag": "H3",
+         "font": "\"Semplicita Pro\"|16px"
+        },
+        {
+         "type": "rich-text",
+         "node": "6591bca498da3",
+         "html": "<p><span>ANAKEESTA</span></p>",
+         "font": "16px"
+        },
+        {
+         "type": "rich-text",
+         "node": "6591bc9c24466",
+         "html": "<p><span>Anakeesta offers a unique mountain experience in Gatlinburg, blending natural beauty with enchanting attractions. Here, guests can wander through the treetop canopy walk, relax in beautifully landscaped gardens, or seek thrills on the mountain coaster. This serene yet exciting destination, nestled in the heart of the Smokies, promises unforgettable moments for every visitor. Anakeesta isn't just a visit; it's an experience where the beauty of nature meets the joy of exploration.</span></p>",
+         "font": "16px"
+        },
+        {
+         "type": "button",
+         "node": "6591bca05d934",
+         "text": "VISIT WEBSITE",
+         "href": "https://anakeesta.com"
+        }
+       ],
+       "sub": []
+      }
+     ],
+     [
+      {
+       "w": "640px",
+       "wpct": 50,
+       "bg": "none",
+       "bgc": "rgba(0, 0, 0, 0)",
+       "mods": [
+        {
+         "type": "heading",
+         "node": "6591c89cdc9fd",
+         "text": "LANDMARKS",
+         "tag": "H3",
+         "font": "\"Semplicita Pro\"|16px"
+        },
+        {
+         "type": "rich-text",
+         "node": "6591c8a137057",
+         "html": "<p><span>CLIMB WORKS</span></p>",
+         "font": "16px"
+        },
+        {
+         "type": "rich-text",
+         "node": "6591c8a43f3e0",
+         "html": "<p><span>Climb Works in Gatlinburg offers an exhilarating adventure for those seeking to connect with nature and experience an adrenaline rush. From challenging mountain biking trails to breathtaking zip lines that soar above the treetops, this destination provides an unforgettable outdoor experience. Guests can explore the natural beauty of the Smokies in a thrilling new way, making every visit unique. Climb Works is more than just an activity; it's an adventure that leaves visitors with lasting memories and stories to share.</span></p>",
+         "font": "16px"
+        },
+        {
+         "type": "button",
+         "node": "6591c8a937c31",
+         "text": "VISIT WEBSITE",
+         "href": "https://www.climbworks.com/smoky_mountains"
+        }
+       ],
+       "sub": []
+      },
+      {
+       "w": "640px",
+       "wpct": 50,
+       "bg": "none",
+       "bgc": "rgba(0, 0, 0, 0)",
+       "mods": [
+        {
+         "type": "photo",
+         "node": "6591c8983e00b",
+         "src": "https://buildsbycarly.com/files/2024/01/climbworks02.jpg",
+         "alt": "climbworks02"
+        }
+       ],
+       "sub": []
+      }
+     ],
+     [
+      {
+       "w": "640px",
+       "wpct": 50,
+       "bg": "none",
+       "bgc": "rgba(0, 0, 0, 0)",
+       "mods": [
+        {
+         "type": "photo",
+         "node": "6591bb50274b1",
+         "src": "https://buildsbycarly.com/files/2024/01/ripleys.jpg",
+         "alt": "ripleys"
+        }
+       ],
+       "sub": []
+      },
+      {
+       "w": "640px",
+       "wpct": 50,
+       "bg": "none",
+       "bgc": "rgba(0, 0, 0, 0)",
+       "mods": [
+        {
+         "type": "heading",
+         "node": "6591b06c76e68",
+         "text": "LANDMARKS",
+         "tag": "H3",
+         "font": "\"Semplicita Pro\"|16px"
+        },
+        {
+         "type": "rich-text",
+         "node": "6591b06c76e8c",
+         "html": "<p><span>RIPLEY'S AQUARIUM</span></p>",
+         "font": "16px"
+        },
+        {
+         "type": "rich-text",
+         "node": "6591b06c76e8d",
+         "html": "<p><span>Ripley's Aquarium in Gatlinburg is an underwater world of wonder, captivating visitors with its exotic marine life and interactive experiences. Imagine strolling through a tunnel surrounded by shimmering fish and graceful sharks, creating memories that last a lifetime. This family-friendly attraction, with its educational exhibits and immersive encounters, draws people of all ages. Ripley's Aquarium isn't just an attraction; it's a journey into the depths of the ocean, right in the heart of Gatlinburg.</span></p>",
+         "font": "16px"
+        },
+        {
+         "type": "button",
+         "node": "6591b06c76e9b",
+         "text": "VISIT WEBSITE",
+         "href": "https://www.ripleyaquariums.com/gatlinburg"
+        }
+       ],
+       "sub": []
+      }
+     ]
+    ]
+   },
+   {
+    "node": "6591b06c76e95",
+    "bg": "url(\"https://brokerage.agent.wallacetn.com/files/2023/08/oakridge.jpg\")",
+    "bgColor": "rgb(10, 26, 45)",
+    "overlay": "rgba(0, 0, 0, 0)",
+    "overlayImg": "linear-gradient(135deg, rgba(10, 34, 62, 0.95) 23%, rgba(201, 212, 208, 0.75) 94%)",
+    "groups": [
+     [
+      {
+       "w": "734.805px",
+       "wpct": 67,
+       "bg": "none",
+       "bgc": "rgba(0, 0, 0, 0)",
+       "mods": [
+        {
+         "type": "rich-text",
+         "node": "6591b06c76e94",
+         "html": "<h3><span>CONTACT </span><strong><span>US!</span></strong></h3>",
+         "font": "42px"
+        },
+        {
+         "type": "rich-text",
+         "node": "6591b06c76e96",
+         "html": "<p><span>I look forward to helping you achieve your current and future investment goals. Please contact me with any questions or when you are ready to start your investment!</span></p>",
+         "font": "16px"
+        }
+       ],
+       "sub": []
+      },
+      {
+       "w": "365.203px",
+       "wpct": 33,
+       "bg": "none",
+       "bgc": "rgba(0, 0, 0, 0)",
+       "mods": [
+        {
+         "type": "button",
+         "node": "6591b06c76e8e",
+         "text": "GET IN TOUCH",
+         "href": "/contact"
+        }
+       ],
+       "sub": []
+      }
+     ]
+    ]
+   },
+   {
+    "node": "h3sbdol2pw9g",
+    "bg": "none",
+    "bgColor": "rgb(10, 34, 64)",
+    "overlay": "rgba(0, 0, 0, 0)",
+    "overlayImg": "none",
+    "groups": [
+     [
+      {
+       "w": "1345px",
+       "wpct": 100,
+       "bg": "none",
+       "bgc": "rgba(0, 0, 0, 0)",
+       "mods": [
+        {
+         "type": "photo",
+         "node": "fp49x6oi5z7u",
+         "src": "https://buildsbycarly.com/files/2024/01/Footer-Logo-300x113.png",
+         "alt": "Footer-Logo"
+        },
+        {
+         "type": "heading",
+         "node": "p8htrem7j3wa",
+         "text": "(865) 505-0514",
+         "tag": "H2",
+         "font": "Helvetica|51px"
+        },
+        {
+         "type": "rich-text",
+         "node": "zg842ihf1nta",
+         "html": "<p>WEST OFFICE | 865-693-1111 | info@wallacetn.com | 106 N. Peters Road | Knoxville, TN 37923</p>",
+         "font": "16px"
+        }
+       ],
+       "sub": []
+      }
+     ],
+     [
+      {
+       "w": "269px",
+       "wpct": 20,
+       "bg": "none",
+       "bgc": "rgba(0, 0, 0, 0)",
+       "mods": [
+        {
+         "type": "photo",
+         "node": "tznia2pb0f35",
+         "src": "https://brokerage.agent.wallacetn.com/files/2023/09/Wallace-Footer-Logo-300x214-1.png",
+         "alt": "Wallace-Footer-Logo-300x214-1.png"
+        }
+       ],
+       "sub": []
+      },
+      {
+       "w": "269px",
+       "wpct": 20,
+       "bg": "none",
+       "bgc": "rgba(0, 0, 0, 0)",
+       "mods": [
+        {
+         "type": "photo",
+         "node": "17kdgmbf3pzl",
+         "src": "https://brokerage.agent.wallacetn.com/files/2023/09/Wallace-Luxury-Footer-Logo.png",
+         "alt": "Wallace-Luxury-Footer-Logo.png"
+        }
+       ],
+       "sub": []
+      },
+      {
+       "w": "269px",
+       "wpct": 20,
+       "bg": "none",
+       "bgc": "rgba(0, 0, 0, 0)",
+       "mods": [
+        {
+         "type": "photo",
+         "node": "sx45ibfh20cn",
+         "src": "https://brokerage.agent.wallacetn.com/files/2023/09/LeadingRE-Footer-Logo-1536x646-1.png",
+         "alt": "LeadingRE-Footer-Logo-1536x646-1.png"
+        }
+       ],
+       "sub": []
+      },
+      {
+       "w": "269px",
+       "wpct": 20,
+       "bg": "none",
+       "bgc": "rgba(0, 0, 0, 0)",
+       "mods": [
+        {
+         "type": "photo",
+         "node": "3emajnrxz4iw",
+         "src": "https://images-static.moxiworks.com/static/images/br/images/eho-89x83.png",
+         "alt": "eho-89x83.png"
+        }
+       ],
+       "sub": []
+      },
+      {
+       "w": "269px",
+       "wpct": 20,
+       "bg": "none",
+       "bgc": "rgba(0, 0, 0, 0)",
+       "mods": [
+        {
+         "type": "photo",
+         "node": "183m4yh0s9cu",
+         "src": "https://images-static.moxiworks.com/static/images/br/images/realtor_white-71x83.png",
+         "alt": "realtor_white-71x83.png"
+        }
+       ],
+       "sub": []
+      }
+     ],
+     [
+      {
+       "w": "1345px",
+       "wpct": 100,
+       "bg": "none",
+       "bgc": "rgba(0, 0, 0, 0)",
+       "mods": [
+        {
+         "type": "rich-text",
+         "node": "56yc2ghe91i3",
+         "html": "<p><span>\u00a92023 Wallace Real Estate. All Rights Reserved.&nbsp;Not intended as a solicitation if your property is already listed by another broker. Affiliated real estate agents are independent contractor sales associates, not employees. Wallace fully supports the principles of the Fair Housing Act and the Equal Opportunity Act.&nbsp;</span></p>",
+         "font": "16px"
+        },
+        {
+         "type": "rich-text",
+         "node": "pcsu5ibj3lq8",
+         "html": "<p><span><a href=\"/terms-of-use\">Terms Of Use</a> | <a href=\"/privacy-policy\">Privacy Policy</a> | <a href=\"/accessibility-statement/\">Accessibility Statement</a> | <a href=\"/fair-housing-notice/\">Fair Housing Notice</a></span></p>",
+         "font": "16px"
+        }
+       ],
+       "sub": []
+      }
+     ]
+    ]
+   }
+  ]
+ },
+ "pigeon-forge": {
+  "title": "Pigeon Forge - Carly Bowlen",
+  "rows": [
+   {
+    "node": "6591bede39981",
+    "bg": "url(\"https://brokerage.agent.wallacetn.com/files/2023/08/oakridge.jpg\")",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "overlay": "rgba(0, 0, 0, 0)",
+    "overlayImg": "linear-gradient(135deg, rgba(10, 34, 62, 0.95) 23%, rgba(201, 212, 208, 0.75) 94%)",
+    "groups": [
+     [
+      {
+       "w": "1280px",
+       "wpct": 100,
+       "bg": "none",
+       "bgc": "rgba(0, 0, 0, 0)",
+       "mods": [
+        {
+         "type": "rich-text",
+         "node": "6591bede3997b",
+         "html": "<h3><span>PIGEON FORGE</span></h3>",
+         "font": "42px"
+        },
+        {
+         "type": "rich-text",
+         "node": "6591bede3997e",
+         "html": "<p><span>Pigeon Forge is a vibrant town bursting with family-friendly attractions, live shows, and unique experiences. Famous for Dollywood, the Island, and its array of amusement offerings, Pigeon Forge is the perfect blend of excitement and Southern charm. Whether seeking thrilling rides or delightful entertainment, visitors find endless enjoyment in this lively mountain town.</span></p>",
+         "font": "16px"
+        }
+       ],
+       "sub": [
+        [
+         {
+          "w": "1280px",
+          "wpct": 100,
+          "bg": "none",
+          "bgc": "rgba(0, 0, 0, 0)",
+          "mods": [
+           {
+            "type": "html",
+            "node": "6591bede3999f",
+            "html": "<div class=\"fl-module-content fl-node-content\"> <div class=\"fl-html\"> <a class=\"weatherwidget-io\" href=\"https://forecast7.com/en/35d79n83d55/pigeon-forge/?unit=us\">PIGEON FORGE WEATHER<iframe class=\"weatherwidget-io-frame\" src=\"https://weatherwidget.io/w/\"></iframe></a> </div> </div>",
+            "text": "PIGEON FORGE WEATHER"
+           }
+          ],
+          "sub": []
+         }
+        ],
+        [
+         {
+          "w": "320px",
+          "wpct": 25,
+          "bg": "none",
+          "bgc": "rgba(0, 0, 0, 0)",
+          "mods": [
+           {
+            "type": "button",
+            "node": "6591bede399a0",
+            "text": "GOV WEBSITE",
+            "href": "https://www.cityofpigeonforge.com/"
+           }
+          ],
+          "sub": []
+         },
+         {
+          "w": "320px",
+          "wpct": 25,
+          "bg": "none",
+          "bgc": "rgba(0, 0, 0, 0)",
+          "mods": [
+           {
+            "type": "button",
+            "node": "6591bede3999c",
+            "text": "RESTAURANTS",
+            "href": "https://www.google.com/maps/search/Restaurants/@35.7954549,-83.5799099,13z?entry=ttu"
+           }
+          ],
+          "sub": []
+         },
+         {
+          "w": "320px",
+          "wpct": 25,
+          "bg": "none",
+          "bgc": "rgba(0, 0, 0, 0)",
+          "mods": [
+           {
+            "type": "button",
+            "node": "6591bede399a1",
+            "text": "MUSEUMS",
+            "href": "https://www.google.com/maps/search/Museums/@35.7955801,-83.5800816,13z?entry=ttu"
+           }
+          ],
+          "sub": []
+         },
+         {
+          "w": "320px",
+          "wpct": 25,
+          "bg": "none",
+          "bgc": "rgba(0, 0, 0, 0)",
+          "mods": [
+           {
+            "type": "button",
+            "node": "6591bede39987",
+            "text": "THINGS TO DO",
+            "href": "https://www.google.com/maps/search/Things+to+do/@35.7957053,-83.5802533,13z?entry=ttu"
+           }
+          ],
+          "sub": []
+         }
+        ]
+       ]
+      }
+     ]
+    ]
+   },
+   {
+    "node": "6591bede399a7",
+    "bg": "none",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "overlay": "rgba(0, 0, 0, 0)",
+    "overlayImg": "none",
+    "groups": [
+     [
+      {
+       "w": "1280px",
+       "wpct": 100,
+       "bg": "none",
+       "bgc": "rgba(0, 0, 0, 0)",
+       "mods": [
+        {
+         "type": "rich-text",
+         "node": "6591bede39989",
+         "html": "<p><span>PIGEON FORGE </span><strong><span><span>FUN FACTS</span></span></strong></p>",
+         "font": "16px"
+        },
+        {
+         "type": "advanced-tabs",
+         "node": "6591bede399aa",
+         "html": "<div class=\"fl-module-content fl-node-content\"> <div class=\"uabb-module-content uabb-tabs uabb-tabs-layout-horizontal uabb-tabs-style-bar\"> <nav class=\"uabb-tabs-nav uabb-tabs-nav6591bede399aa\"> <ul> <li class=\"uabb-tab-current\"> <h4 class=\"uabb-tag-selected\"> <a class=\"uabb-tab-link\" href=\"javascript:void(0);\"><span class=\"uabb-tab-title\">ZORBING PARK</span> </a> </h4> </li> <li class=\"\"> <h4 class=\"uabb-tag-selected\"> <a class=\"uabb-tab-link\" href=\"javascript:void(0);\"><span class=\"uabb-tab-title\">TOURISM HOT SPOT</span> </a> </h4> </li> <li class=\"\"> <h4 class=\"uabb-tag-selected\"> <a class=\"uabb-tab-link\" href=\"javascript:void(0);\"><span class=\"uabb-tab-title\">CAR ENTHUSIAST</span> </a> </h4> </li> <li class=\"\"> <h4 class=\"uabb-tag-selected\"> <a class=\"uabb-tab-link\" href=\"javascript:void(0);\"><span class=\"uabb-tab-title\">RIPKEN BASEBALL EXPERIENCE</span> </a> </h4> </li> <li class=\"\"> <h4 class=\"uabb-tag-selected\"> <a class=\"uabb-tab-link\" href=\"javascript:void(0);\"><span class=\"uabb-tab-title\">DOLLYWOOD</span> </a> </h4> </li> <li class=\"\"> <h4 class=\"uabb-tag-selected\"> <a class=\"uabb-tab-link\" href=\"javascript:void(0);\"><span class=\"uabb-tab-title\">MUSIC MECCA</span> </a> </h4> </li> <li class=\"\"> <h4 class=\"uabb-tag-selected\"> <a class=\"uabb-tab-link\" href=\"javascript:void(0);\"><span class=\"uabb-tab-title\">OUTLETS</span> </a> </h4> </li> </ul> </nav> <div class=\"uabb-content-wrap uabb-content-wrap6591bede399aa\"> <div class=\"-0 section \"> <div class=\"uabb-tab-acc-title uabb-acc-0\"> <h4 class=\"uabb-title-tag\"> <span class=\"uabb-tab-title\">ZORBING PARK</span> </h4> <span class=\"uabb-acc-icon\"><i class=\"ua-icon ua-icon-chevron-down2\"></i></span> </div> <div class=\"uabb-content uabb-tab-acc-content clearfix uabb-tabs-desc uabb-text-editor\"> <p><span>Pigeon Forge is home to the only zorbing park in the entire United States</span></p> </div> </div> <div class=\"-1 section \"> <div class=\"uabb-tab-acc-title uabb-acc-1\"> <h4 class=\"uabb-title-tag\"> <span class=\"uabb-tab-title\">TOURISM HOT SPOT</span> </h4> <span class=\"uabb-acc-icon\"><i class=\"ua-icon ua-icon-chevron-down2\"></i></span> </div> <div class=\"uabb-content uabb-tab-acc-content clearfix uabb-tabs-desc uabb-text-editor\"> <p><span>Pigeon Forge sees over 11 million visitors a year, which is more than double the number of permanent residents! Only about 6,500 people call Pigeon Forge home</span></p> </div> </div> <div class=\"-2 section \"> <div class=\"uabb-tab-acc-title uabb-acc-2\"> <h4 class=\"uabb-title-tag\"> <span class=\"uabb-tab-title\">CAR ENTHUSIAST</span> </h4> <span class=\"uabb-acc-icon\"><i class=\"ua-icon ua-icon-chevron-down2\"></i></span> </div> <div class=\"uabb-content uabb-tab-acc-content clearfix uabb-tabs-desc uabb-text-editor\"> <p><span>Pigeon Forge is a car enthusiast hub, hosting over 15 annual car events per year</span></p> </div> </div> <div class=\"-3 section \"> <div class=\"uabb-tab-acc-title uabb-acc-3\"> <h4 class=\"uabb-title-tag\"> <span class=\"uabb-tab-title\">RIPKEN BASEBALL EXPERIENCE</span> </h4> <span class=\"uabb-acc-icon\"><i class=\"ua-icon ua-icon-chevron-down2\"></i></span> </div> <div class=\"uabb-content uabb-tab-acc-content clearfix uabb-tabs-desc uabb-text-editor\"> <p><span><span>Pigeon Forge is home to The Ripken Baseball Experience, which hosts more than 1,000 teams annually from more than 30 states, traveling from as far away as California, Alaska and overseas.&nbsp;</span> </span></p> </div> </div> <div class=\"-4 section \"> <div class=\"uabb-tab-acc-title uabb-acc-4\"> <h4 class=\"uabb-title-tag\"> <span class=\"uabb-tab-title\">DOLLYWOOD</span> </h4> <span class=\"uabb-acc-icon\"><i class=\"ua-icon ua-icon-chevron-down2\"></i></span> </div> <div class=\"uabb-content uabb-tab-acc-content clearfix uabb-tabs-desc uabb-text-editor\"> <p><span>In 2022 alone, Dollywood was recognized as Tripadvisor's #1 Theme Park in the United States and won Golden Ticket Awards for Best Kids' Area, Best Christmas Event and Best Guest Experience. <span>Dollywood was also the FIRST theme park to develop a calming room on-site in 2016, for guests who need a break from sensory overload.</span></span></p> </div> </div> <div class=\"-5 section \"> <div class=\"uabb-tab-acc-title uabb-acc-5\"> <h4 class=\"uabb-title-tag\"> <span class=\"uabb-tab-title\">MUSIC MECCA</span> </h4> <span class=\"uabb-acc-icon\"><i class=\"ua-icon ua-icon-chevron-down2\"></i></span> </div> <div class=\"uabb-content uabb-tab-acc-content clearfix uabb-tabs-desc uabb-text-editor\"> <p><span>Pigeon Forge is a hotbed of musical talent, and the town hosts numerous music festivals throughout the year. Visitors can enjoy everything from bluegrass to country and rock 'n' roll.</span></p> </div> </div> <div class=\"-6 section \"> <div class=\"uabb-tab-acc-title uabb-acc-6\"> <h4 class=\"uabb-title-tag\"> <span class=\"uabb-tab-title\">OUTLETS</span> </h4> <span class=\"uabb-acc-icon\"><i class=\"ua-icon ua-icon-chevron-down2\"></i></span> </div> <div class=\"uabb-content uabb-tab-acc-content clearfix uabb-tabs-desc uabb-text-editor\"> <p><span><span>Pigeon Forge is home to several large&nbsp;</span><span>outlet malls and shopping centers</span><span>, making it a popular destination for shoppers. Visitors can find everything from designer clothing to unique souvenirs.</span></span></p> </div> </div> </div><!-- /content --> </div><!-- /tabs --> </div>",
+         "text": "ZORBING PARK\t\nTOURISM HOT SPOT\t\nCAR ENTHUSIAST\t\nRIPKEN BASEBALL EXPERIENCE\t\nDOLLYWOOD\t\nMUSIC MECCA\t\nOUTLETS"
+        }
+       ],
+       "sub": []
+      }
+     ]
+    ]
+   },
+   {
+    "node": "6591bede39983",
+    "bg": "none",
+    "bgColor": "rgb(207, 216, 225)",
+    "overlay": "rgba(0, 0, 0, 0)",
+    "overlayImg": "none",
+    "groups": [
+     [
+      {
+       "w": "640px",
+       "wpct": 50,
+       "bg": "none",
+       "bgc": "rgba(0, 0, 0, 0)",
+       "mods": [
+        {
+         "type": "heading",
+         "node": "6591bede3998e",
+         "text": "LANDMARKS",
+         "tag": "H3",
+         "font": "\"Semplicita Pro\"|16px"
+        },
+        {
+         "type": "rich-text",
+         "node": "6591bede3998f",
+         "html": "<p><span>DOLLYWOOD</span></p>",
+         "font": "16px"
+        },
+        {
+         "type": "rich-text",
+         "node": "6591bede39990",
+         "html": "<p><span>Dollywood, nestled in the heart of the Smoky Mountains, is a vibrant blend of thrilling rides, traditional crafts, and live entertainment. This famed theme park, co-owned by Dolly Parton, offers a unique taste of Tennessee culture alongside its exciting attractions. Visitors can enjoy everything from roller coasters to authentic mountain music, making it a perfect destination for families and adventure seekers alike. Dollywood isn't just a park; it's a celebration of the rich heritage and spirited fun of the Smokies.</span></p>",
+         "font": "16px"
+        },
+        {
+         "type": "button",
+         "node": "6591bede39991",
+         "text": "VISIT WEBSITE",
+         "href": "https://www.dollywood.com"
+        }
+       ],
+       "sub": []
+      },
+      {
+       "w": "640px",
+       "wpct": 50,
+       "bg": "none",
+       "bgc": "rgba(0, 0, 0, 0)",
+       "mods": [
+        {
+         "type": "photo",
+         "node": "6591bede399ab",
+         "src": "https://buildsbycarly.com/files/2024/01/dollywood.jpg",
+         "alt": "dollywood"
+        }
+       ],
+       "sub": []
+      }
+     ],
+     [
+      {
+       "w": "640px",
+       "wpct": 50,
+       "bg": "none",
+       "bgc": "rgba(0, 0, 0, 0)",
+       "mods": [
+        {
+         "type": "photo",
+         "node": "6591bede39988",
+         "src": "https://buildsbycarly.com/files/2024/01/the-island.jpg",
+         "alt": "the-island"
+        }
+       ],
+       "sub": []
+      },
+      {
+       "w": "640px",
+       "wpct": 50,
+       "bg": "none",
+       "bgc": "rgba(0, 0, 0, 0)",
+       "mods": [
+        {
+         "type": "heading",
+         "node": "6591bede399af",
+         "text": "LANDMARKS",
+         "tag": "H3",
+         "font": "\"Semplicita Pro\"|16px"
+        },
+        {
+         "type": "rich-text",
+         "node": "6591bede399b0",
+         "html": "<p><span>THE ISLAND</span></p>",
+         "font": "16px"
+        },
+        {
+         "type": "rich-text",
+         "node": "6591bede399b1",
+         "html": "<p><span>The Island in Pigeon Forge is a vibrant oasis of fun and relaxation, offering something for everyone. This lively entertainment complex captivates visitors with its unique mix of shops, restaurants, and amusement rides, including the iconic Great Smoky Mountain Wheel. Guests can enjoy leisurely strolls around the fountains, indulge in diverse culinary delights, or simply soak in the lively atmosphere. The Island is more than a destination; it's an experience where enjoyment and memorable moments are around every corner.</span></p>",
+         "font": "16px"
+        },
+        {
+         "type": "button",
+         "node": "6591bede399b2",
+         "text": "VISIT WEBSITE",
+         "href": "https://islandinpigeonforge.com"
+        }
+       ],
+       "sub": []
+      }
+     ],
+     [
+      {
+       "w": "640px",
+       "wpct": 50,
+       "bg": "none",
+       "bgc": "rgba(0, 0, 0, 0)",
+       "mods": [
+        {
+         "type": "heading",
+         "node": "6591bede399b7",
+         "text": "LANDMARKS",
+         "tag": "H3",
+         "font": "\"Semplicita Pro\"|16px"
+        },
+        {
+         "type": "rich-text",
+         "node": "6591bede399b8",
+         "html": "<p><span>MOUNTAIN COASTERS</span></p>",
+         "font": "16px"
+        },
+        {
+         "type": "rich-text",
+         "node": "6591bede399b9",
+         "html": "<p><span>Experience the thrill of the Smokies in a unique way with the exciting mountain coasters in Gatlinburg and Pigeon Forge. These coasters offer a blend of adventure and breathtaking scenery, providing an exhilarating ride through the natural beauty of the mountains. Guests control their speed, making it a fun experience for thrill-seekers or those who prefer a leisurely pace. Each ride on a mountain coaster is not just an activity; it's an unforgettable journey through the heart of the Smoky Mountains, combining excitement with stunning vistas.</span></p>",
+         "font": "16px"
+        },
+        {
+         "type": "button",
+         "node": "6591bede399ba",
+         "text": "VISIT WEBSITE",
+         "href": "http://www.smokymountainalpinecoaster.com"
+        }
+       ],
+       "sub": []
+      },
+      {
+       "w": "640px",
+       "wpct": 50,
+       "bg": "none",
+       "bgc": "rgba(0, 0, 0, 0)",
+       "mods": [
+        {
+         "type": "photo",
+         "node": "6591bede3998d",
+         "src": "https://buildsbycarly.com/files/2024/01/coasters.jpg",
+         "alt": "coasters"
+        }
+       ],
+       "sub": []
+      }
+     ],
+     [
+      {
+       "w": "640px",
+       "wpct": 50,
+       "bg": "none",
+       "bgc": "rgba(0, 0, 0, 0)",
+       "mods": [
+        {
+         "type": "photo",
+         "node": "6591bede399be",
+         "src": "https://buildsbycarly.com/files/2024/01/titanic.jpg",
+         "alt": "titanic"
+        }
+       ],
+       "sub": []
+      },
+      {
+       "w": "640px",
+       "wpct": 50,
+       "bg": "none",
+       "bgc": "rgba(0, 0, 0, 0)",
+       "mods": [
+        {
+         "type": "heading",
+         "node": "6591bede399bf",
+         "text": "LANDMARKS",
+         "tag": "H3",
+         "font": "\"Semplicita Pro\"|16px"
+        },
+        {
+         "type": "rich-text",
+         "node": "6591bede399c2",
+         "html": "<p><span>TITANIC MUSEUM</span></p>",
+         "font": "16px"
+        },
+        {
+         "type": "rich-text",
+         "node": "6591bede399c0",
+         "html": "<p><span>The Titanic Museum in Pigeon Forge offers a captivating historical experience, taking visitors on a journey back to the legendary ocean liner. This unique attraction allows guests to explore full-scale recreations of the ship's interiors and discover hundreds of artifacts from the Titanic. It's an immersive experience that blends history with interactive storytelling, making it a must-visit for history enthusiasts and families alike. The Titanic Museum is more than just an exhibit; it's a poignant tribute to a timeless story, inviting guests to step into history.</span></p>",
+         "font": "16px"
+        },
+        {
+         "type": "button",
+         "node": "6591bede399c1",
+         "text": "VISIT WEBSITE",
+         "href": "https://titanicpigeonforge.com"
+        }
+       ],
+       "sub": []
+      }
+     ],
+     [
+      {
+       "w": "640px",
+       "wpct": 50,
+       "bg": "none",
+       "bgc": "rgba(0, 0, 0, 0)",
+       "mods": [
+        {
+         "type": "heading",
+         "node": "6591cc607b450",
+         "text": "LANDMARKS",
+         "tag": "H3",
+         "font": "\"Semplicita Pro\"|16px"
+        },
+        {
+         "type": "rich-text",
+         "node": "6591cc662ee92",
+         "html": "<p><span>GRAVITY PARK</span></p>",
+         "font": "16px"
+        },
+        {
+         "type": "rich-text",
+         "node": "6591cc675fe98",
+         "html": "<p><span>Gravity Park in Gatlinburg is the ultimate destination for those seeking excitement and fun. Featuring the tallest and fastest zip line in the Smokies and a range of adrenaline-pumping activities like the Skyscraper and the Slingshot, this park is a haven for thrill-seekers. Whether it's racing through the air or experiencing the exhilaration of free-fall, Gravity Park offers unforgettable adventures. It's more than just an amusement park; it's an exhilarating experience that pushes the limits of fun and adventure.</span></p>",
+         "font": "16px"
+        },
+        {
+         "type": "button",
+         "node": "6591cc6fad4ec",
+         "text": "VISIT WEBSITE",
+         "href": "https://www.outdoorgravitypark.com"
+        }
+       ],
+       "sub": []
+      },
+      {
+       "w": "640px",
+       "wpct": 50,
+       "bg": "none",
+       "bgc": "rgba(0, 0, 0, 0)",
+       "mods": [
+        {
+         "type": "photo",
+         "node": "6591cc54f0e82",
+         "src": "https://buildsbycarly.com/files/2024/01/gravity.jpg",
+         "alt": "gravity"
+        }
+       ],
+       "sub": []
+      }
+     ],
+     [
+      {
+       "w": "640px",
+       "wpct": 50,
+       "bg": "none",
+       "bgc": "rgba(0, 0, 0, 0)",
+       "mods": [
+        {
+         "type": "photo",
+         "node": "6591bede399b6",
+         "src": "https://buildsbycarly.com/files/2024/01/museum.jpg",
+         "alt": "museum"
+        }
+       ],
+       "sub": []
+      },
+      {
+       "w": "640px",
+       "wpct": 50,
+       "bg": "none",
+       "bgc": "rgba(0, 0, 0, 0)",
+       "mods": [
+        {
+         "type": "heading",
+         "node": "6591cc735a552",
+         "text": "LANDMARKS",
+         "tag": "H3",
+         "font": "\"Semplicita Pro\"|16px"
+        },
+        {
+         "type": "rich-text",
+         "node": "6591cc7480a62",
+         "html": "<p><span>ALCATRAZ CRIME MUSEUM</span></p>",
+         "font": "16px"
+        },
+        {
+         "type": "rich-text",
+         "node": "6591cc7a4d35d",
+         "html": "<p><span>At the Alcatraz East Crime Museum in Pigeon Forge, visitors embark on an intriguing journey through America's criminal history. This unique museum offers an immersive exploration of crime, punishment, and forensic science, featuring artifacts and stories from notorious criminals to law enforcement heroes. It's an educational and eye-opening experience, providing a deep dive into the complexities of the American justice system. Alcatraz East isn't just a museum; it's a captivating adventure into the darker side of history, inviting curiosity and understanding.</span></p>",
+         "font": "16px"
+        },
+        {
+         "type": "button",
+         "node": "6591cc8306a40",
+         "text": "VISIT WEBSITE",
+         "href": "https://www.alcatrazeast.com"
+        }
+       ],
+       "sub": []
+      }
+     ],
+     [
+      {
+       "w": "640px",
+       "wpct": 50,
+       "bg": "none",
+       "bgc": "rgba(0, 0, 0, 0)",
+       "mods": [
+        {
+         "type": "heading",
+         "node": "6591bede39982",
+         "text": "LANDMARKS",
+         "tag": "H3",
+         "font": "\"Semplicita Pro\"|16px"
+        },
+        {
+         "type": "rich-text",
+         "node": "6591bede39992",
+         "html": "<p><span>ZIPLINES</span></p>",
+         "font": "16px"
+        },
+        {
+         "type": "rich-text",
+         "node": "6591bede39993",
+         "html": "<p><span>Ziplining in the Smoky Mountains offers an exhilarating way to experience the area's natural beauty from a thrilling new perspective. Glide through the lush forests and over rolling hills, feeling the rush of the wind and the breathtaking views. These zipline adventures cater to everyone, from adrenaline junkies to families looking for an unforgettable experience. It's more than just a ride; it's an opportunity to create lasting memories while soaring high above some of the most picturesque landscapes in Gatlinburg and Pigeon Forge.</span></p>",
+         "font": "16px"
+        },
+        {
+         "type": "button",
+         "node": "6591bede3999b",
+         "text": "VISIT WEBSITE",
+         "href": "https://smokymountainziplines.com"
+        }
+       ],
+       "sub": []
+      },
+      {
+       "w": "640px",
+       "wpct": 50,
+       "bg": "none",
+       "bgc": "rgba(0, 0, 0, 0)",
+       "mods": [
+        {
+         "type": "photo",
+         "node": "6591cc58455c3",
+         "src": "https://buildsbycarly.com/files/2024/01/climbworks.jpg",
+         "alt": "climbworks"
+        }
+       ],
+       "sub": []
+      }
+     ]
+    ]
+   },
+   {
+    "node": "6591bede39996",
+    "bg": "url(\"https://brokerage.agent.wallacetn.com/files/2023/08/oakridge.jpg\")",
+    "bgColor": "rgb(10, 26, 45)",
+    "overlay": "rgba(0, 0, 0, 0)",
+    "overlayImg": "linear-gradient(135deg, rgba(10, 34, 62, 0.95) 23%, rgba(201, 212, 208, 0.75) 94%)",
+    "groups": [
+     [
+      {
+       "w": "734.805px",
+       "wpct": 67,
+       "bg": "none",
+       "bgc": "rgba(0, 0, 0, 0)",
+       "mods": [
+        {
+         "type": "rich-text",
+         "node": "6591bede39995",
+         "html": "<h3><span>CONTACT </span><strong><span>US!</span></strong></h3>",
+         "font": "42px"
+        },
+        {
+         "type": "rich-text",
+         "node": "6591bede39997",
+         "html": "<p><span>I look forward to helping you achieve your current and future investment goals. Please contact me with any questions or when you are ready to start your investment!</span></p>",
+         "font": "16px"
+        }
+       ],
+       "sub": []
+      },
+      {
+       "w": "365.203px",
+       "wpct": 33,
+       "bg": "none",
+       "bgc": "rgba(0, 0, 0, 0)",
+       "mods": [
+        {
+         "type": "button",
+         "node": "6591bede39994",
+         "text": "GET IN TOUCH",
+         "href": "/contact"
+        }
+       ],
+       "sub": []
+      }
+     ]
+    ]
+   },
+   {
+    "node": "h3sbdol2pw9g",
+    "bg": "none",
+    "bgColor": "rgb(10, 34, 64)",
+    "overlay": "rgba(0, 0, 0, 0)",
+    "overlayImg": "none",
+    "groups": [
+     [
+      {
+       "w": "1345px",
+       "wpct": 100,
+       "bg": "none",
+       "bgc": "rgba(0, 0, 0, 0)",
+       "mods": [
+        {
+         "type": "photo",
+         "node": "fp49x6oi5z7u",
+         "src": "https://buildsbycarly.com/files/2024/01/Footer-Logo-300x113.png",
+         "alt": "Footer-Logo"
+        },
+        {
+         "type": "heading",
+         "node": "p8htrem7j3wa",
+         "text": "(865) 505-0514",
+         "tag": "H2",
+         "font": "Helvetica|51px"
+        },
+        {
+         "type": "rich-text",
+         "node": "zg842ihf1nta",
+         "html": "<p>WEST OFFICE | 865-693-1111 | info@wallacetn.com | 106 N. Peters Road | Knoxville, TN 37923</p>",
+         "font": "16px"
+        }
+       ],
+       "sub": []
+      }
+     ],
+     [
+      {
+       "w": "269px",
+       "wpct": 20,
+       "bg": "none",
+       "bgc": "rgba(0, 0, 0, 0)",
+       "mods": [
+        {
+         "type": "photo",
+         "node": "tznia2pb0f35",
+         "src": "https://brokerage.agent.wallacetn.com/files/2023/09/Wallace-Footer-Logo-300x214-1.png",
+         "alt": "Wallace-Footer-Logo-300x214-1.png"
+        }
+       ],
+       "sub": []
+      },
+      {
+       "w": "269px",
+       "wpct": 20,
+       "bg": "none",
+       "bgc": "rgba(0, 0, 0, 0)",
+       "mods": [
+        {
+         "type": "photo",
+         "node": "17kdgmbf3pzl",
+         "src": "https://brokerage.agent.wallacetn.com/files/2023/09/Wallace-Luxury-Footer-Logo.png",
+         "alt": "Wallace-Luxury-Footer-Logo.png"
+        }
+       ],
+       "sub": []
+      },
+      {
+       "w": "269px",
+       "wpct": 20,
+       "bg": "none",
+       "bgc": "rgba(0, 0, 0, 0)",
+       "mods": [
+        {
+         "type": "photo",
+         "node": "sx45ibfh20cn",
+         "src": "https://brokerage.agent.wallacetn.com/files/2023/09/LeadingRE-Footer-Logo-1536x646-1.png",
+         "alt": "LeadingRE-Footer-Logo-1536x646-1.png"
+        }
+       ],
+       "sub": []
+      },
+      {
+       "w": "269px",
+       "wpct": 20,
+       "bg": "none",
+       "bgc": "rgba(0, 0, 0, 0)",
+       "mods": [
+        {
+         "type": "photo",
+         "node": "3emajnrxz4iw",
+         "src": "https://images-static.moxiworks.com/static/images/br/images/eho-89x83.png",
+         "alt": "eho-89x83.png"
+        }
+       ],
+       "sub": []
+      },
+      {
+       "w": "269px",
+       "wpct": 20,
+       "bg": "none",
+       "bgc": "rgba(0, 0, 0, 0)",
+       "mods": [
+        {
+         "type": "photo",
+         "node": "183m4yh0s9cu",
+         "src": "https://images-static.moxiworks.com/static/images/br/images/realtor_white-71x83.png",
+         "alt": "realtor_white-71x83.png"
+        }
+       ],
+       "sub": []
+      }
+     ],
+     [
+      {
+       "w": "1345px",
+       "wpct": 100,
+       "bg": "none",
+       "bgc": "rgba(0, 0, 0, 0)",
+       "mods": [
+        {
+         "type": "rich-text",
+         "node": "56yc2ghe91i3",
+         "html": "<p><span>\u00a92023 Wallace Real Estate. All Rights Reserved.&nbsp;Not intended as a solicitation if your property is already listed by another broker. Affiliated real estate agents are independent contractor sales associates, not employees. Wallace fully supports the principles of the Fair Housing Act and the Equal Opportunity Act.&nbsp;</span></p>",
+         "font": "16px"
+        },
+        {
+         "type": "rich-text",
+         "node": "pcsu5ibj3lq8",
+         "html": "<p><span><a href=\"/terms-of-use\">Terms Of Use</a> | <a href=\"/privacy-policy\">Privacy Policy</a> | <a href=\"/accessibility-statement/\">Accessibility Statement</a> | <a href=\"/fair-housing-notice/\">Fair Housing Notice</a></span></p>",
+         "font": "16px"
+        }
+       ],
+       "sub": []
+      }
+     ]
+    ]
+   }
+  ]
+ },
+ "sevierville": {
+  "title": "Sevierville - Carly Bowlen",
+  "rows": [
+   {
+    "node": "6591bedc94d23",
+    "bg": "url(\"https://brokerage.agent.wallacetn.com/files/2023/08/oakridge.jpg\")",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "overlay": "rgba(0, 0, 0, 0)",
+    "overlayImg": "linear-gradient(135deg, rgba(10, 34, 62, 0.95) 23%, rgba(201, 212, 208, 0.75) 94%)",
+    "groups": [
+     [
+      {
+       "w": "1280px",
+       "wpct": 100,
+       "bg": "none",
+       "bgc": "rgba(0, 0, 0, 0)",
+       "mods": [
+        {
+         "type": "rich-text",
+         "node": "6591bedc94d1d",
+         "html": "<h3><span>SEVIERVILLE</span></h3>",
+         "font": "42px"
+        },
+        {
+         "type": "rich-text",
+         "node": "6591bedc94d20",
+         "html": "<p><span>Sevierville, nestled on the edge of the Great Smoky Mountains, offers a delightful mix of outdoor beauty and hometown charm. Known for its picturesque landscapes, historical sites, and family attractions, Sevierville is an ideal destination for those who appreciate both nature and relaxed, small-town vibes. It's a gateway to outdoor adventures and a haven for relaxation.</span></p>",
+         "font": "16px"
+        }
+       ],
+       "sub": [
+        [
+         {
+          "w": "1280px",
+          "wpct": 100,
+          "bg": "none",
+          "bgc": "rgba(0, 0, 0, 0)",
+          "mods": [
+           {
+            "type": "html",
+            "node": "6591bedc94d41",
+            "html": "<div class=\"fl-module-content fl-node-content\"> <div class=\"fl-html\"> <a class=\"weatherwidget-io\" href=\"https://forecast7.com/en/35d87n83d56/sevierville/?unit=us\">SEVIERVILLE WEATHER<iframe class=\"weatherwidget-io-frame\" src=\"https://weatherwidget.io/w/\"></iframe></a> </div> </div>",
+            "text": "SEVIERVILLE WEATHER"
+           }
+          ],
+          "sub": []
+         }
+        ],
+        [
+         {
+          "w": "320px",
+          "wpct": 25,
+          "bg": "none",
+          "bgc": "rgba(0, 0, 0, 0)",
+          "mods": [
+           {
+            "type": "button",
+            "node": "6591bedc94d42",
+            "text": "GOV WEBSITE",
+            "href": "https://www.google.com/url?q=http://www.seviervilletn.org/&sa=D&sntz=1&usd=2&usg=AOvVaw3n6XrzHFgsmT1f_MaigJ16"
+           }
+          ],
+          "sub": []
+         },
+         {
+          "w": "320px",
+          "wpct": 25,
+          "bg": "none",
+          "bgc": "rgba(0, 0, 0, 0)",
+          "mods": [
+           {
+            "type": "button",
+            "node": "6591bedc94d3e",
+            "text": "RESTAURANTS",
+            "href": "https://www.google.com/maps/search/Restaurants/@35.9082101,-83.565764,12z?entry=ttu"
+           }
+          ],
+          "sub": []
+         },
+         {
+          "w": "320px",
+          "wpct": 25,
+          "bg": "none",
+          "bgc": "rgba(0, 0, 0, 0)",
+          "mods": [
+           {
+            "type": "button",
+            "node": "6591bedc94d43",
+            "text": "MUSEUMS",
+            "href": "https://www.google.com/maps/search/Museums/@35.9084318,-83.5661075,12z?entry=ttu"
+           }
+          ],
+          "sub": []
+         },
+         {
+          "w": "320px",
+          "wpct": 25,
+          "bg": "none",
+          "bgc": "rgba(0, 0, 0, 0)",
+          "mods": [
+           {
+            "type": "button",
+            "node": "6591bedc94d29",
+            "text": "THINGS TO DO",
+            "href": "https://www.google.com/maps/search/Things+to+do/@35.9088754,-83.5667945,12z/data=!3m1!4b1?entry=ttu"
+           }
+          ],
+          "sub": []
+         }
+        ]
+       ]
+      }
+     ]
+    ]
+   },
+   {
+    "node": "6591bedc94d49",
+    "bg": "none",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "overlay": "rgba(0, 0, 0, 0)",
+    "overlayImg": "none",
+    "groups": [
+     [
+      {
+       "w": "1280px",
+       "wpct": 100,
+       "bg": "none",
+       "bgc": "rgba(0, 0, 0, 0)",
+       "mods": [
+        {
+         "type": "rich-text",
+         "node": "6591bedc94d2b",
+         "html": "<p><span>SEVIERVILLE </span><strong><span><span>FUN FACTS</span></span></strong></p>",
+         "font": "16px"
+        },
+        {
+         "type": "advanced-tabs",
+         "node": "6591bedc94d4c",
+         "html": "<div class=\"fl-module-content fl-node-content\"> <div class=\"uabb-module-content uabb-tabs uabb-tabs-layout-horizontal uabb-tabs-style-bar\"> <nav class=\"uabb-tabs-nav uabb-tabs-nav6591bedc94d4c\"> <ul> <li class=\"uabb-tab-current\"> <h4 class=\"uabb-tag-selected\"> <a class=\"uabb-tab-link\" href=\"javascript:void(0);\"><span class=\"uabb-tab-title\">SHORELINE</span> </a> </h4> </li> <li class=\"\"> <h4 class=\"uabb-tag-selected\"> <a class=\"uabb-tab-link\" href=\"javascript:void(0);\"><span class=\"uabb-tab-title\">FISHING</span> </a> </h4> </li> <li class=\"\"> <h4 class=\"uabb-tag-selected\"> <a class=\"uabb-tab-link\" href=\"javascript:void(0);\"><span class=\"uabb-tab-title\">GOLF COURSE</span> </a> </h4> </li> <li class=\"\"> <h4 class=\"uabb-tag-selected\"> <a class=\"uabb-tab-link\" href=\"javascript:void(0);\"><span class=\"uabb-tab-title\">DOLLY PARTON</span> </a> </h4> </li> <li class=\"\"> <h4 class=\"uabb-tag-selected\"> <a class=\"uabb-tab-link\" href=\"javascript:void(0);\"><span class=\"uabb-tab-title\">FESTIVALS</span> </a> </h4> </li> <li class=\"\"> <h4 class=\"uabb-tag-selected\"> <a class=\"uabb-tab-link\" href=\"javascript:void(0);\"><span class=\"uabb-tab-title\">COURTHOUSE</span> </a> </h4> </li> <li class=\"\"> <h4 class=\"uabb-tag-selected\"> <a class=\"uabb-tab-link\" href=\"javascript:void(0);\"><span class=\"uabb-tab-title\">FORBIDDEN CAVERNS</span> </a> </h4> </li> </ul> </nav> <div class=\"uabb-content-wrap uabb-content-wrap6591bedc94d4c\"> <div class=\"-0 section \"> <div class=\"uabb-tab-acc-title uabb-acc-0\"> <h4 class=\"uabb-title-tag\"> <span class=\"uabb-tab-title\">SHORELINE</span> </h4> <span class=\"uabb-acc-icon\"><i class=\"ua-icon ua-icon-chevron-down2\"></i></span> </div> <div class=\"uabb-content uabb-tab-acc-content clearfix uabb-tabs-desc uabb-text-editor\"> <p><span>Douglas has 555-miles of shoreline, a total surface area of 30,600-acres, and sees more than 1.7 million visitors per year</span></p> </div> </div> <div class=\"-1 section \"> <div class=\"uabb-tab-acc-title uabb-acc-1\"> <h4 class=\"uabb-title-tag\"> <span class=\"uabb-tab-title\">FISHING</span> </h4> <span class=\"uabb-acc-icon\"><i class=\"ua-icon ua-icon-chevron-down2\"></i></span> </div> <div class=\"uabb-content uabb-tab-acc-content clearfix uabb-tabs-desc uabb-text-editor\"> <p><span>Douglas Lake has been rated in the top 5 Crappie Fishing Lakes in the nation and in the top 10 Largemouth Bass Fishing Lakes.</span></p> </div> </div> <div class=\"-2 section \"> <div class=\"uabb-tab-acc-title uabb-acc-2\"> <h4 class=\"uabb-title-tag\"> <span class=\"uabb-tab-title\">GOLF COURSE</span> </h4> <span class=\"uabb-acc-icon\"><i class=\"ua-icon ua-icon-chevron-down2\"></i></span> </div> <div class=\"uabb-content uabb-tab-acc-content clearfix uabb-tabs-desc uabb-text-editor\"> <p><span>Sevierville Golf Club was recently recognized by Golf Advisor as one of top 50 US Courses. <span>The Sevierville Golf Club has now opened two new championship courses and features the River- a par 72 laid out along the (East prong or just the Little Pigeon River) and the Highland- a par 70 that winds through the lush hillsides. Both are beautiful, demanding and affordable</span></span></p> </div> </div> <div class=\"-3 section \"> <div class=\"uabb-tab-acc-title uabb-acc-3\"> <h4 class=\"uabb-title-tag\"> <span class=\"uabb-tab-title\">DOLLY PARTON</span> </h4> <span class=\"uabb-acc-icon\"><i class=\"ua-icon ua-icon-chevron-down2\"></i></span> </div> <div class=\"uabb-content uabb-tab-acc-content clearfix uabb-tabs-desc uabb-text-editor\"> <p><span>Dolly Parton was born and raised in Sevierville and a replica of her childhood cabin can be viewed by visitors at Dollywood</span></p> </div> </div> <div class=\"-4 section \"> <div class=\"uabb-tab-acc-title uabb-acc-4\"> <h4 class=\"uabb-title-tag\"> <span class=\"uabb-tab-title\">FESTIVALS</span> </h4> <span class=\"uabb-acc-icon\"><i class=\"ua-icon ua-icon-chevron-down2\"></i></span> </div> <div class=\"uabb-content uabb-tab-acc-content clearfix uabb-tabs-desc uabb-text-editor\"> <p><span>Local festivals run year-round to keep the community coming together for tasty food, wonderful music, &nbsp;and great times all around</span></p> </div> </div> <div class=\"-5 section \"> <div class=\"uabb-tab-acc-title uabb-acc-5\"> <h4 class=\"uabb-title-tag\"> <span class=\"uabb-tab-title\">COURTHOUSE</span> </h4> <span class=\"uabb-acc-icon\"><i class=\"ua-icon ua-icon-chevron-down2\"></i></span> </div> <div class=\"uabb-content uabb-tab-acc-content clearfix uabb-tabs-desc uabb-text-editor\"> <p><span>Sevierville\u2019s courthouse, now over 100 years old, is listed on the National Register of Historic Places and stands proud in the heart of downtown Sevierville.&nbsp; Built in 1895-96, the courthouse is an excellent example of Victorian architecture.</span></p> </div> </div> <div class=\"-6 section \"> <div class=\"uabb-tab-acc-title uabb-acc-6\"> <h4 class=\"uabb-title-tag\"> <span class=\"uabb-tab-title\">FORBIDDEN CAVERNS</span> </h4> <span class=\"uabb-acc-icon\"><i class=\"ua-icon ua-icon-chevron-down2\"></i></span> </div> <div class=\"uabb-content uabb-tab-acc-content clearfix uabb-tabs-desc uabb-text-editor\"> <p><span>During the early twenties and until 1943, a cave system called Forbidden Caverns was used to make moonshine. The constant water supply and the isolated location was ideal for Moonshiner\u2019s to make their homemade whiskey.&nbsp; Today, Forbidden Caverns is open for guided tours that explain the rich history of this cavern.</span></p> </div> </div> </div><!-- /content --> </div><!-- /tabs --> </div>",
+         "text": "SHORELINE\t\nFISHING\t\nGOLF COURSE\t\nDOLLY PARTON\t\nFESTIVALS\t\nCOURTHOUSE\t\nFORBIDDEN CAVERNS"
+        }
+       ],
+       "sub": []
+      }
+     ]
+    ]
+   },
+   {
+    "node": "6591bedc94d25",
+    "bg": "none",
+    "bgColor": "rgb(207, 216, 225)",
+    "overlay": "rgba(0, 0, 0, 0)",
+    "overlayImg": "none",
+    "groups": [
+     [
+      {
+       "w": "640px",
+       "wpct": 50,
+       "bg": "none",
+       "bgc": "rgba(0, 0, 0, 0)",
+       "mods": [
+        {
+         "type": "heading",
+         "node": "6591bedc94d30",
+         "text": "LANDMARKS",
+         "tag": "H3",
+         "font": "\"Semplicita Pro\"|16px"
+        },
+        {
+         "type": "rich-text",
+         "node": "6591bedc94d31",
+         "html": "<p><span>DOUGLAS LAKE</span></p>",
+         "font": "16px"
+        },
+        {
+         "type": "rich-text",
+         "node": "6591bedc94d32",
+         "html": "<p><span>Douglas Lake, nestled near the Smoky Mountains, is a peaceful haven for nature lovers and outdoor enthusiasts. This picturesque lake offers a tranquil escape with activities like boating, fishing, and swimming, surrounded by stunning mountain vistas. It's the perfect spot for those seeking a quiet retreat or an active day in the great outdoors. Douglas Lake is not just a destination; it's an experience that embodies the serene beauty and recreational joy of the Tennessee outdoors.</span></p>",
+         "font": "16px"
+        },
+        {
+         "type": "button",
+         "node": "6591bedc94d33",
+         "text": "VISIT WEBSITE",
+         "href": "https://douglas-lake.org"
+        }
+       ],
+       "sub": []
+      },
+      {
+       "w": "640px",
+       "wpct": 50,
+       "bg": "none",
+       "bgc": "rgba(0, 0, 0, 0)",
+       "mods": [
+        {
+         "type": "photo",
+         "node": "6591bedc94d4d",
+         "src": "https://buildsbycarly.com/files/2024/01/norris.jpg",
+         "alt": "norris"
+        }
+       ],
+       "sub": []
+      }
+     ],
+     [
+      {
+       "w": "640px",
+       "wpct": 50,
+       "bg": "none",
+       "bgc": "rgba(0, 0, 0, 0)",
+       "mods": [
+        {
+         "type": "photo",
+         "node": "6591bedc94d2a",
+         "src": "https://buildsbycarly.com/files/2024/01/zoo.jpg",
+         "alt": "zoo"
+        }
+       ],
+       "sub": []
+      },
+      {
+       "w": "640px",
+       "wpct": 50,
+       "bg": "none",
+       "bgc": "rgba(0, 0, 0, 0)",
+       "mods": [
+        {
+         "type": "heading",
+         "node": "6591bedc94d51",
+         "text": "LANDMARKS",
+         "tag": "H3",
+         "font": "\"Semplicita Pro\"|16px"
+        },
+        {
+         "type": "rich-text",
+         "node": "6591bedc94d52",
+         "html": "<p><span>RAINFOREST ZOO</span></p>",
+         "font": "16px"
+        },
+        {
+         "type": "rich-text",
+         "node": "6591bedc94d53",
+         "html": "<p><span>The RainForest Adventures Discovery Zoo in the Smoky Mountains is a hidden gem where visitors can get up close with the wonders of the animal kingdom. This unique zoo features a diverse collection of exotic creatures from rainforests around the world, offering an educational and exciting experience for all ages. From playful monkeys to colorful parrots, the zoo provides a captivating glimpse into the vibrant life of the tropics. It's an enchanting escape that brings the magic of the rainforest to life, right in the heart of Tennessee.</span></p>",
+         "font": "16px"
+        },
+        {
+         "type": "button",
+         "node": "6591bedc94d54",
+         "text": "VISIT WEBSITE",
+         "href": "https://www.rfadventures.com"
+        }
+       ],
+       "sub": []
+      }
+     ],
+     [
+      {
+       "w": "640px",
+       "wpct": 50,
+       "bg": "none",
+       "bgc": "rgba(0, 0, 0, 0)",
+       "mods": [
+        {
+         "type": "heading",
+         "node": "6591bedc94d59",
+         "text": "LANDMARKS",
+         "tag": "H3",
+         "font": "\"Semplicita Pro\"|16px"
+        },
+        {
+         "type": "rich-text",
+         "node": "6591bedc94d5a",
+         "html": "<p><span>DEER FARM</span></p>",
+         "font": "16px"
+        },
+        {
+         "type": "rich-text",
+         "node": "6591bedc94d5b",
+         "html": "<p><span>The Deer Farm Exotic Petting Zoo and Riding Stables in the Smoky Mountains offers a delightful outdoor experience unlike any other. Here, visitors can interact up-close with friendly deer and a variety of other animals, creating unforgettable moments for all ages. The farm also offers horseback riding, allowing guests to explore the scenic beauty of the area in a charming and leisurely way. It's not just a visit to a zoo; it's an opportunity to connect with nature and enjoy the simple pleasures of animal companionship and outdoor exploration.</span></p>",
+         "font": "16px"
+        },
+        {
+         "type": "button",
+         "node": "6591bedc94d5c",
+         "text": "VISIT WEBSITE",
+         "href": "https://deerfarmzoo.com"
+        }
+       ],
+       "sub": []
+      },
+      {
+       "w": "640px",
+       "wpct": 50,
+       "bg": "none",
+       "bgc": "rgba(0, 0, 0, 0)",
+       "mods": [
+        {
+         "type": "photo",
+         "node": "6591bedc94d2f",
+         "src": "https://buildsbycarly.com/files/2024/01/deerp-park.jpg",
+         "alt": "deerp-park"
+        }
+       ],
+       "sub": []
+      }
+     ],
+     [
+      {
+       "w": "640px",
+       "wpct": 50,
+       "bg": "none",
+       "bgc": "rgba(0, 0, 0, 0)",
+       "mods": [
+        {
+         "type": "photo",
+         "node": "6591bedc94d60",
+         "src": "https://buildsbycarly.com/files/2024/01/trail.jpg",
+         "alt": "trail"
+        }
+       ],
+       "sub": []
+      },
+      {
+       "w": "640px",
+       "wpct": 50,
+       "bg": "none",
+       "bgc": "rgba(0, 0, 0, 0)",
+       "mods": [
+        {
+         "type": "heading",
+         "node": "6591bedc94d61",
+         "text": "LANDMARKS",
+         "tag": "H3",
+         "font": "\"Semplicita Pro\"|16px"
+        },
+        {
+         "type": "rich-text",
+         "node": "6591bedc94d64",
+         "html": "<p><span>FOXFIRE PARK</span></p>",
+         "font": "16px"
+        },
+        {
+         "type": "rich-text",
+         "node": "6591bedc94d62",
+         "html": "<p><span>Foxfire Mountain Adventure Park in the Smoky Mountains is a haven for those seeking both tranquility and thrill. This park offers a wide array of activities, from serene waterfall hikes to exhilarating zipline courses that soar above the lush landscape. Visitors can also test their courage on the swinging bridge or unwind by the creekside. It's more than just an adventure park; Foxfire Mountain is a place where natural beauty meets excitement, providing a perfect blend of relaxation and adventure for every visitor.</span></p>",
+         "font": "16px"
+        },
+        {
+         "type": "button",
+         "node": "6591bedc94d63",
+         "text": "VISIT WEBSITE",
+         "href": "https://www.foxfireadventurepark.com"
+        }
+       ],
+       "sub": []
+      }
+     ],
+     [
+      {
+       "w": "640px",
+       "wpct": 50,
+       "bg": "none",
+       "bgc": "rgba(0, 0, 0, 0)",
+       "mods": [
+        {
+         "type": "heading",
+         "node": "6591cf243a0ad",
+         "text": "LANDMARKS",
+         "tag": "H3",
+         "font": "\"Semplicita Pro\"|16px"
+        },
+        {
+         "type": "rich-text",
+         "node": "6591cf27af5d4",
+         "html": "<p><span>WAHOO ZIPLINES</span></p>",
+         "font": "16px"
+        },
+        {
+         "type": "rich-text",
+         "node": "6591cf2d7379b",
+         "html": "<p><span>Wahoo Ziplines offers an unforgettable aerial adventure in the heart of the Smoky Mountains. As one of the area's premier zipline experiences, it provides a unique way to enjoy the breathtaking scenery from a thrilling new perspective. Glide over treetops and experience the exhilaration of flying, with views that stretch for miles. Perfect for thrill-seekers and nature enthusiasts alike, Wahoo Ziplines is more than just an activity; it's an exhilarating journey through the beauty of the Smokies, creating memories that last a lifetime.</span></p>",
+         "font": "16px"
+        },
+        {
+         "type": "button",
+         "node": "6591cf3402577",
+         "text": "VISIT WEBSITE",
+         "href": "https://wahooziplines.com"
+        }
+       ],
+       "sub": []
+      },
+      {
+       "w": "640px",
+       "wpct": 50,
+       "bg": "none",
+       "bgc": "rgba(0, 0, 0, 0)",
+       "mods": [
+        {
+         "type": "photo",
+         "node": "6591cf1f1a9d9",
+         "src": "https://buildsbycarly.com/files/2024/01/ziplines.jpg",
+         "alt": "ziplines"
+        }
+       ],
+       "sub": []
+      }
+     ],
+     [
+      {
+       "w": "640px",
+       "wpct": 50,
+       "bg": "none",
+       "bgc": "rgba(0, 0, 0, 0)",
+       "mods": [
+        {
+         "type": "photo",
+         "node": "6591cf3882989",
+         "src": "https://buildsbycarly.com/files/2024/01/ninja02.jpg",
+         "alt": "ninja02"
+        }
+       ],
+       "sub": []
+      },
+      {
+       "w": "640px",
+       "wpct": 50,
+       "bg": "none",
+       "bgc": "rgba(0, 0, 0, 0)",
+       "mods": [
+        {
+         "type": "heading",
+         "node": "6591cf3c2571c",
+         "text": "LANDMARKS",
+         "tag": "H3",
+         "font": "\"Semplicita Pro\"|16px"
+        },
+        {
+         "type": "rich-text",
+         "node": "6591cf4488f09",
+         "html": "<p><span>NINJA WARRIOR PARK</span></p>",
+         "font": "16px"
+        },
+        {
+         "type": "rich-text",
+         "node": "6591cf4f9a50b",
+         "html": "<p><span>Ninja Warrior Park in the Smoky Mountains offers an exciting challenge for those looking to test their physical abilities and agility. Inspired by the popular Ninja Warrior TV series, this park features a variety of obstacle courses designed for all skill levels, from beginners to seasoned athletes. It's a place where fun meets fitness, as visitors push their limits, climb, jump, and swing through unique and challenging setups. Ninja Warrior Park isn't just a physical adventure; it's an opportunity to build confidence, strength, and have a blast while doing it.</span></p>",
+         "font": "16px"
+        },
+        {
+         "type": "button",
+         "node": "6591cf5121d7b",
+         "text": "VISIT WEBSITE",
+         "href": "https://sevierair.com"
+        }
+       ],
+       "sub": []
+      }
+     ],
+     [
+      {
+       "w": "640px",
+       "wpct": 50,
+       "bg": "none",
+       "bgc": "rgba(0, 0, 0, 0)",
+       "mods": [
+        {
+         "type": "heading",
+         "node": "6591cf8ae8be8",
+         "text": "LANDMARKS",
+         "tag": "H3",
+         "font": "\"Semplicita Pro\"|16px"
+        },
+        {
+         "type": "rich-text",
+         "node": "6591cf8c4a187",
+         "html": "<p><span>SEVIERVILLE GOLF CLUB</span></p>",
+         "font": "16px"
+        },
+        {
+         "type": "rich-text",
+         "node": "6591cf9304b4c",
+         "html": "<p><span>The Sevierville Golf Club offers a top-tier golfing experience set against the backdrop of the stunning Smoky Mountains. Boasting beautifully maintained courses that cater to players of all skill levels, this club is a golfer's paradise. Whether you're looking to challenge your game or simply enjoy a leisurely round in a picturesque setting, the Sevierville Golf Club provides the perfect blend of scenic beauty and golfing excellence. It's more than just a round of golf; it's an experience that combines sport, relaxation, and the natural splendor of Tennessee.</span></p>",
+         "font": "16px"
+        },
+        {
+         "type": "button",
+         "node": "6591cf99a9418",
+         "text": "VISIT WEBSITE",
+         "href": "https://www.seviervillegolfclub.com"
+        }
+       ],
+       "sub": []
+      },
+      {
+       "w": "640px",
+       "wpct": 50,
+       "bg": "none",
+       "bgc": "rgba(0, 0, 0, 0)",
+       "mods": [
+        {
+         "type": "photo",
+         "node": "6591cf84b67a3",
+         "src": "https://buildsbycarly.com/files/2024/01/golf-club.jpg",
+         "alt": "golf-club"
+        }
+       ],
+       "sub": []
+      }
+     ],
+     [
+      {
+       "w": "640px",
+       "wpct": 50,
+       "bg": "none",
+       "bgc": "rgba(0, 0, 0, 0)",
+       "mods": [
+        {
+         "type": "photo",
+         "node": "6591bedc94d58",
+         "src": "https://buildsbycarly.com/files/2024/01/caverns.jpg",
+         "alt": "caverns"
+        }
+       ],
+       "sub": []
+      },
+      {
+       "w": "640px",
+       "wpct": 50,
+       "bg": "none",
+       "bgc": "rgba(0, 0, 0, 0)",
+       "mods": [
+        {
+         "type": "heading",
+         "node": "6591bedc94d24",
+         "text": "LANDMARKS",
+         "tag": "H3",
+         "font": "\"Semplicita Pro\"|16px"
+        },
+        {
+         "type": "rich-text",
+         "node": "6591bedc94d34",
+         "html": "<p><span>FOBIDDEN CAVERNS</span></p>",
+         "font": "16px"
+        },
+        {
+         "type": "rich-text",
+         "node": "6591bedc94d35",
+         "html": "<p><span>Step into the mesmerizing world of Forbidden Caverns in the Smoky Mountains, where you can uncover the hidden underground marvels of Tennessee. This natural attraction offers guided tours through a network of caves, showcasing stunning formations, sparkling streams, and a rich history. It's an educational and awe-inspiring journey, perfect for families and anyone curious about the mysteries beneath the earth's surface. Forbidden Caverns isn't just a cave tour; it's an exploration of natural beauty and geological wonders waiting to be discovered.</span></p>",
+         "font": "16px"
+        },
+        {
+         "type": "button",
+         "node": "6591bedc94d3d",
+         "text": "VISIT WEBSITE",
+         "href": "https://forbiddencavern.com"
+        }
+       ],
+       "sub": []
+      }
+     ]
+    ]
+   },
+   {
+    "node": "6591bedc94d38",
+    "bg": "url(\"https://brokerage.agent.wallacetn.com/files/2023/08/oakridge.jpg\")",
+    "bgColor": "rgb(10, 26, 45)",
+    "overlay": "rgba(0, 0, 0, 0)",
+    "overlayImg": "linear-gradient(135deg, rgba(10, 34, 62, 0.95) 23%, rgba(201, 212, 208, 0.75) 94%)",
+    "groups": [
+     [
+      {
+       "w": "734.805px",
+       "wpct": 67,
+       "bg": "none",
+       "bgc": "rgba(0, 0, 0, 0)",
+       "mods": [
+        {
+         "type": "rich-text",
+         "node": "6591bedc94d37",
+         "html": "<h3><span>CONTACT </span><strong><span>US!</span></strong></h3>",
+         "font": "42px"
+        },
+        {
+         "type": "rich-text",
+         "node": "6591bedc94d39",
+         "html": "<p><span>I look forward to helping you achieve your current and future investment goals. Please contact me with any questions or when you are ready to start your investment!</span></p>",
+         "font": "16px"
+        }
+       ],
+       "sub": []
+      },
+      {
+       "w": "365.203px",
+       "wpct": 33,
+       "bg": "none",
+       "bgc": "rgba(0, 0, 0, 0)",
+       "mods": [
+        {
+         "type": "button",
+         "node": "6591bedc94d36",
+         "text": "GET IN TOUCH",
+         "href": "/contact"
+        }
+       ],
+       "sub": []
+      }
+     ]
+    ]
+   },
+   {
+    "node": "h3sbdol2pw9g",
+    "bg": "none",
+    "bgColor": "rgb(10, 34, 64)",
+    "overlay": "rgba(0, 0, 0, 0)",
+    "overlayImg": "none",
+    "groups": [
+     [
+      {
+       "w": "1345px",
+       "wpct": 100,
+       "bg": "none",
+       "bgc": "rgba(0, 0, 0, 0)",
+       "mods": [
+        {
+         "type": "photo",
+         "node": "fp49x6oi5z7u",
+         "src": "https://buildsbycarly.com/files/2024/01/Footer-Logo-300x113.png",
+         "alt": "Footer-Logo"
+        },
+        {
+         "type": "heading",
+         "node": "p8htrem7j3wa",
+         "text": "(865) 505-0514",
+         "tag": "H2",
+         "font": "Helvetica|51px"
+        },
+        {
+         "type": "rich-text",
+         "node": "zg842ihf1nta",
+         "html": "<p>WEST OFFICE | 865-693-1111 | info@wallacetn.com | 106 N. Peters Road | Knoxville, TN 37923</p>",
+         "font": "16px"
+        }
+       ],
+       "sub": []
+      }
+     ],
+     [
+      {
+       "w": "269px",
+       "wpct": 20,
+       "bg": "none",
+       "bgc": "rgba(0, 0, 0, 0)",
+       "mods": [
+        {
+         "type": "photo",
+         "node": "tznia2pb0f35",
+         "src": "https://brokerage.agent.wallacetn.com/files/2023/09/Wallace-Footer-Logo-300x214-1.png",
+         "alt": "Wallace-Footer-Logo-300x214-1.png"
+        }
+       ],
+       "sub": []
+      },
+      {
+       "w": "269px",
+       "wpct": 20,
+       "bg": "none",
+       "bgc": "rgba(0, 0, 0, 0)",
+       "mods": [
+        {
+         "type": "photo",
+         "node": "17kdgmbf3pzl",
+         "src": "https://brokerage.agent.wallacetn.com/files/2023/09/Wallace-Luxury-Footer-Logo.png",
+         "alt": "Wallace-Luxury-Footer-Logo.png"
+        }
+       ],
+       "sub": []
+      },
+      {
+       "w": "269px",
+       "wpct": 20,
+       "bg": "none",
+       "bgc": "rgba(0, 0, 0, 0)",
+       "mods": [
+        {
+         "type": "photo",
+         "node": "sx45ibfh20cn",
+         "src": "https://brokerage.agent.wallacetn.com/files/2023/09/LeadingRE-Footer-Logo-1536x646-1.png",
+         "alt": "LeadingRE-Footer-Logo-1536x646-1.png"
+        }
+       ],
+       "sub": []
+      },
+      {
+       "w": "269px",
+       "wpct": 20,
+       "bg": "none",
+       "bgc": "rgba(0, 0, 0, 0)",
+       "mods": [
+        {
+         "type": "photo",
+         "node": "3emajnrxz4iw",
+         "src": "https://images-static.moxiworks.com/static/images/br/images/eho-89x83.png",
+         "alt": "eho-89x83.png"
+        }
+       ],
+       "sub": []
+      },
+      {
+       "w": "269px",
+       "wpct": 20,
+       "bg": "none",
+       "bgc": "rgba(0, 0, 0, 0)",
+       "mods": [
+        {
+         "type": "photo",
+         "node": "183m4yh0s9cu",
+         "src": "https://images-static.moxiworks.com/static/images/br/images/realtor_white-71x83.png",
+         "alt": "realtor_white-71x83.png"
+        }
+       ],
+       "sub": []
+      }
+     ],
+     [
+      {
+       "w": "1345px",
+       "wpct": 100,
+       "bg": "none",
+       "bgc": "rgba(0, 0, 0, 0)",
+       "mods": [
+        {
+         "type": "rich-text",
+         "node": "56yc2ghe91i3",
+         "html": "<p><span>\u00a92023 Wallace Real Estate. All Rights Reserved.&nbsp;Not intended as a solicitation if your property is already listed by another broker. Affiliated real estate agents are independent contractor sales associates, not employees. Wallace fully supports the principles of the Fair Housing Act and the Equal Opportunity Act.&nbsp;</span></p>",
+         "font": "16px"
+        },
+        {
+         "type": "rich-text",
+         "node": "pcsu5ibj3lq8",
+         "html": "<p><span><a href=\"/terms-of-use\">Terms Of Use</a> | <a href=\"/privacy-policy\">Privacy Policy</a> | <a href=\"/accessibility-statement/\">Accessibility Statement</a> | <a href=\"/fair-housing-notice/\">Fair Housing Notice</a></span></p>",
+         "font": "16px"
+        }
+       ],
+       "sub": []
+      }
+     ]
+    ]
+   }
+  ]
+ },
+ "smoky-mountains": {
+  "title": "Smoky Mountains - Carly Bowlen",
+  "rows": [
+   {
+    "node": "6591bed65c395",
+    "bg": "url(\"https://brokerage.agent.wallacetn.com/files/2023/08/oakridge.jpg\")",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "overlay": "rgba(0, 0, 0, 0)",
+    "overlayImg": "linear-gradient(135deg, rgba(10, 34, 62, 0.95) 23%, rgba(201, 212, 208, 0.75) 94%)",
+    "groups": [
+     [
+      {
+       "w": "1280px",
+       "wpct": 100,
+       "bg": "none",
+       "bgc": "rgba(0, 0, 0, 0)",
+       "mods": [
+        {
+         "type": "rich-text",
+         "node": "6591bed65c38e",
+         "html": "<h3><span>SMOKY MOUNTAINS</span></h3>",
+         "font": "42px"
+        },
+        {
+         "type": "rich-text",
+         "node": "6591bed65c392",
+         "html": "<p><span>The Great Smoky Mountains National Park is a majestic natural wonder, renowned for its diverse wildlife, rich history, and stunning landscapes. This vast wilderness invites exploration with its hiking trails, scenic viewpoints, and tranquil streams. Ideal for adventurers, nature lovers, and those seeking a peaceful retreat, the Smokies offer an unparalleled connection with the great outdoors.</span></p>",
+         "font": "16px"
+        }
+       ],
+       "sub": [
+        [
+         {
+          "w": "1280px",
+          "wpct": 100,
+          "bg": "none",
+          "bgc": "rgba(0, 0, 0, 0)",
+          "mods": [
+           {
+            "type": "html",
+            "node": "6591bed65c3b3",
+            "html": "<div class=\"fl-module-content fl-node-content\"> <div class=\"fl-html\"> <a class=\"weatherwidget-io\" href=\"https://forecast7.com/en/35d94n83d12/cocke-county/?unit=us\">SMOKY MOUNTAINS WEATHER<iframe class=\"weatherwidget-io-frame\" src=\"https://weatherwidget.io/w/\"></iframe></a> </div> </div>",
+            "text": "SMOKY MOUNTAINS WEATHER"
+           }
+          ],
+          "sub": []
+         }
+        ],
+        [
+         {
+          "w": "320px",
+          "wpct": 25,
+          "bg": "none",
+          "bgc": "rgba(0, 0, 0, 0)",
+          "mods": [
+           {
+            "type": "button",
+            "node": "6591bed65c3b4",
+            "text": "GOV WEBSITE",
+            "href": "https://www.nps.gov/grsm/index.htm"
+           }
+          ],
+          "sub": []
+         },
+         {
+          "w": "320px",
+          "wpct": 25,
+          "bg": "none",
+          "bgc": "rgba(0, 0, 0, 0)",
+          "mods": [
+           {
+            "type": "button",
+            "node": "6591bed65c3b0",
+            "text": "RESTAURANTS",
+            "href": "https://www.google.com/maps/search/Restaurants/@35.6388703,-83.533569,10z/data=!4m7!2m6!3m5!2sGreat+Smoky+Mountains!3s0x8859521e1372343d:0xa04eac8607697ce3!4m2!1d-83.5070203!2d35.6531943?entry=ttu"
+           }
+          ],
+          "sub": []
+         },
+         {
+          "w": "320px",
+          "wpct": 25,
+          "bg": "none",
+          "bgc": "rgba(0, 0, 0, 0)",
+          "mods": [
+           {
+            "type": "button",
+            "node": "6591bed65c3b5",
+            "text": "TRANSIT",
+            "href": "https://www.google.com/maps/search/Transit+stations/@35.9236056,-84.1021741,16z/data=!3m1!4b1!4m7!2m6!3m5!2sGreat+Smoky+Mountains!3s0x8859521e1372343d:0xa04eac8607697ce3!4m2!1d-83.5070203!2d35.6531943?entry=ttu"
+           }
+          ],
+          "sub": []
+         },
+         {
+          "w": "320px",
+          "wpct": 25,
+          "bg": "none",
+          "bgc": "rgba(0, 0, 0, 0)",
+          "mods": [
+           {
+            "type": "button",
+            "node": "6591bed65c39b",
+            "text": "THINGS TO DO",
+            "href": "https://www.google.com/maps/search/Things+to+do/@35.7613566,-83.6232801,12z/data=!3m1!4b1!4m7!2m6!3m5!2sGreat+Smoky+Mountains!3s0x8859521e1372343d:0xa04eac8607697ce3!4m2!1d-83.5070203!2d35.6531943?entry=ttu"
+           }
+          ],
+          "sub": []
+         }
+        ]
+       ]
+      }
+     ]
+    ]
+   },
+   {
+    "node": "6591bed65c3bb",
+    "bg": "none",
+    "bgColor": "rgba(0, 0, 0, 0)",
+    "overlay": "rgba(0, 0, 0, 0)",
+    "overlayImg": "none",
+    "groups": [
+     [
+      {
+       "w": "1280px",
+       "wpct": 100,
+       "bg": "none",
+       "bgc": "rgba(0, 0, 0, 0)",
+       "mods": [
+        {
+         "type": "rich-text",
+         "node": "6591bed65c39d",
+         "html": "<p><span>SMOKY MOUNTAINS </span><strong><span><span>FUN FACTS</span></span></strong></p>",
+         "font": "16px"
+        },
+        {
+         "type": "advanced-tabs",
+         "node": "6591bed65c3be",
+         "html": "<div class=\"fl-module-content fl-node-content\"> <div class=\"uabb-module-content uabb-tabs uabb-tabs-layout-horizontal uabb-tabs-style-bar\"> <nav class=\"uabb-tabs-nav uabb-tabs-nav6591bed65c3be\"> <ul> <li class=\"uabb-tab-current\"> <h4 class=\"uabb-tag-selected\"> <a class=\"uabb-tab-link\" href=\"javascript:void(0);\"><span class=\"uabb-tab-title\">PEAK TOURISM</span> </a> </h4> </li> <li class=\"\"> <h4 class=\"uabb-tag-selected\"> <a class=\"uabb-tab-link\" href=\"javascript:void(0);\"><span class=\"uabb-tab-title\">HIKING TRAILS</span> </a> </h4> </li> <li class=\"\"> <h4 class=\"uabb-tag-selected\"> <a class=\"uabb-tab-link\" href=\"javascript:void(0);\"><span class=\"uabb-tab-title\">FIREFLIES</span> </a> </h4> </li> <li class=\"\"> <h4 class=\"uabb-tag-selected\"> <a class=\"uabb-tab-link\" href=\"javascript:void(0);\"><span class=\"uabb-tab-title\">SALAMANDER CAPITAL</span> </a> </h4> </li> <li class=\"\"> <h4 class=\"uabb-tag-selected\"> <a class=\"uabb-tab-link\" href=\"javascript:void(0);\"><span class=\"uabb-tab-title\">APALACHIAN TRAIL</span> </a> </h4> </li> <li class=\"\"> <h4 class=\"uabb-tag-selected\"> <a class=\"uabb-tab-link\" href=\"javascript:void(0);\"><span class=\"uabb-tab-title\">SHORT DRIVE</span> </a> </h4> </li> <li class=\"\"> <h4 class=\"uabb-tag-selected\"> <a class=\"uabb-tab-link\" href=\"javascript:void(0);\"><span class=\"uabb-tab-title\">CHEROKEE ROOTS</span> </a> </h4> </li> <li class=\"\"> <h4 class=\"uabb-tag-selected\"> <a class=\"uabb-tab-link\" href=\"javascript:void(0);\"><span class=\"uabb-tab-title\">PRIVATLEY FUNDED</span> </a> </h4> </li> </ul> </nav> <div class=\"uabb-content-wrap uabb-content-wrap6591bed65c3be\"> <div class=\"-0 section \"> <div class=\"uabb-tab-acc-title uabb-acc-0\"> <h4 class=\"uabb-title-tag\"> <span class=\"uabb-tab-title\">PEAK TOURISM</span> </h4> <span class=\"uabb-acc-icon\"><i class=\"ua-icon ua-icon-chevron-down2\"></i></span> </div> <div class=\"uabb-content uabb-tab-acc-content clearfix uabb-tabs-desc uabb-text-editor\"> <p><span><span>The Great Smoky Mountains is the most visited national park in the country.&nbsp; The Smoky Mountains gets more annual visitors than the Grand Canyon, Yosemite, and Yellowstone&nbsp;</span><b><i>combined</i></b><span>.</span></span></p> </div> </div> <div class=\"-1 section \"> <div class=\"uabb-tab-acc-title uabb-acc-1\"> <h4 class=\"uabb-title-tag\"> <span class=\"uabb-tab-title\">HIKING TRAILS</span> </h4> <span class=\"uabb-acc-icon\"><i class=\"ua-icon ua-icon-chevron-down2\"></i></span> </div> <div class=\"uabb-content uabb-tab-acc-content clearfix uabb-tabs-desc uabb-text-editor\"> <p><span>The Great Smoky Mountains has more than 800 miles of hiking trails, more than 90 historic structures, and about 2,900 miles of streams, all of which you can fish in</span></p> </div> </div> <div class=\"-2 section \"> <div class=\"uabb-tab-acc-title uabb-acc-2\"> <h4 class=\"uabb-title-tag\"> <span class=\"uabb-tab-title\">FIREFLIES</span> </h4> <span class=\"uabb-acc-icon\"><i class=\"ua-icon ua-icon-chevron-down2\"></i></span> </div> <div class=\"uabb-content uabb-tab-acc-content clearfix uabb-tabs-desc uabb-text-editor\"> <p><span>Great Smoky Mountains National Park is one of only two locations in the world where you can witness the synchronous fireflies phenomenon.</span></p> </div> </div> <div class=\"-3 section \"> <div class=\"uabb-tab-acc-title uabb-acc-3\"> <h4 class=\"uabb-title-tag\"> <span class=\"uabb-tab-title\">SALAMANDER CAPITAL</span> </h4> <span class=\"uabb-acc-icon\"><i class=\"ua-icon ua-icon-chevron-down2\"></i></span> </div> <div class=\"uabb-content uabb-tab-acc-content clearfix uabb-tabs-desc uabb-text-editor\"> <p><span>While the Park may be known better for its black bear population, it is also considered the \u201cSalamander Capital of the World\u201d The Park is home to 24 species of lung-less salamanders.</span></p> </div> </div> <div class=\"-4 section \"> <div class=\"uabb-tab-acc-title uabb-acc-4\"> <h4 class=\"uabb-title-tag\"> <span class=\"uabb-tab-title\">APALACHIAN TRAIL</span> </h4> <span class=\"uabb-acc-icon\"><i class=\"ua-icon ua-icon-chevron-down2\"></i></span> </div> <div class=\"uabb-content uabb-tab-acc-content clearfix uabb-tabs-desc uabb-text-editor\"> <p><span>The Smokies include part of the Appalachian Trail. A 70-mile stretch of the 2,178-mile Appalachian Trail winds through Great&nbsp;Smoky Mountains National Park.</span></p> </div> </div> <div class=\"-5 section \"> <div class=\"uabb-tab-acc-title uabb-acc-5\"> <h4 class=\"uabb-title-tag\"> <span class=\"uabb-tab-title\">SHORT DRIVE</span> </h4> <span class=\"uabb-acc-icon\"><i class=\"ua-icon ua-icon-chevron-down2\"></i></span> </div> <div class=\"uabb-content uabb-tab-acc-content clearfix uabb-tabs-desc uabb-text-editor\"> <p><span><span>The Great Smoky Mountains National Park is within a day\u2019s drive of&nbsp;</span><b>60% of the nation</b><span>.</span></span></p> </div> </div> <div class=\"-6 section \"> <div class=\"uabb-tab-acc-title uabb-acc-6\"> <h4 class=\"uabb-title-tag\"> <span class=\"uabb-tab-title\">CHEROKEE ROOTS</span> </h4> <span class=\"uabb-acc-icon\"><i class=\"ua-icon ua-icon-chevron-down2\"></i></span> </div> <div class=\"uabb-content uabb-tab-acc-content clearfix uabb-tabs-desc uabb-text-editor\"> <p><span>The Smokies got their name from the Cherokee people. They called it \u201cShaconage\u201d (shah-con-ah-jey) which means \u201cplace of the blue smoke.\u201d The name comes from the blue mist that floats above the peaks of the mountains.</span></p> </div> </div> <div class=\"-7 section \"> <div class=\"uabb-tab-acc-title uabb-acc-7\"> <h4 class=\"uabb-title-tag\"> <span class=\"uabb-tab-title\">PRIVATLEY FUNDED</span> </h4> <span class=\"uabb-acc-icon\"><i class=\"ua-icon ua-icon-chevron-down2\"></i></span> </div> <div class=\"uabb-content uabb-tab-acc-content clearfix uabb-tabs-desc uabb-text-editor\"> <p><span>The Great Smoky Mountains is the only national park in the United States that was created using private funds. The government wanted to establish a national park in the east, but it didn\u2019t have enough money to purchase land. Local landowners and John D. Rockefeller donated money, with Rockefeller donating about $5 million dollars, creating the Great Smoky Mountains National Park.</span></p> </div> </div> </div><!-- /content --> </div><!-- /tabs --> </div>",
+         "text": "PEAK TOURISM\t\nHIKING TRAILS\t\nFIREFLIES\t\nSALAMANDER CAPITAL\t\nAPALACHIAN TRAIL\t\nSHORT DRIVE\t\nCHEROKEE ROOTS\t\nPRIVATLEY FUNDED"
+        }
+       ],
+       "sub": []
+      }
+     ]
+    ]
+   },
+   {
+    "node": "6591bed65c397",
+    "bg": "none",
+    "bgColor": "rgb(207, 216, 225)",
+    "overlay": "rgba(0, 0, 0, 0)",
+    "overlayImg": "none",
+    "groups": [
+     [
+      {
+       "w": "640px",
+       "wpct": 50,
+       "bg": "none",
+       "bgc": "rgba(0, 0, 0, 0)",
+       "mods": [
+        {
+         "type": "heading",
+         "node": "6591bed65c3a2",
+         "text": "LANDMARKS",
+         "tag": "H3",
+         "font": "\"Semplicita Pro\"|16px"
+        },
+        {
+         "type": "rich-text",
+         "node": "6591bed65c3a3",
+         "html": "<p><span>CLINGMAN'S DOME</span></p>",
+         "font": "16px"
+        },
+        {
+         "type": "rich-text",
+         "node": "6591bed65c3a4",
+         "html": "<p><span>Clingmans Dome, the highest point in the Great Smoky Mountains National Park, offers breathtaking panoramic views that are truly unmatched. This renowned spot invites visitors to ascend its observation tower and witness the stunning vistas of the Smokies. Ideal for hikers, photographers, and nature lovers, the journey to Clingmans Dome is as enchanting as the destination itself, with beautiful trails winding through lush forests. It's more than just a viewpoint; Clingmans Dome is an unforgettable experience that encapsulates the majestic beauty of the mountains.</span></p>",
+         "font": "16px"
+        },
+        {
+         "type": "button",
+         "node": "6591bed65c3a5",
+         "text": "VISIT WEBSITE",
+         "href": "https://www.nps.gov/grsm/planyourvisit/clingmansdome.htm"
+        }
+       ],
+       "sub": []
+      },
+      {
+       "w": "640px",
+       "wpct": 50,
+       "bg": "none",
+       "bgc": "rgba(0, 0, 0, 0)",
+       "mods": [
+        {
+         "type": "photo",
+         "node": "6591bed65c3bf",
+         "src": "https://buildsbycarly.com/files/2024/01/tip.jpg",
+         "alt": "tip"
+        }
+       ],
+       "sub": []
+      }
+     ],
+     [
+      {
+       "w": "640px",
+       "wpct": 50,
+       "bg": "none",
+       "bgc": "rgba(0, 0, 0, 0)",
+       "mods": [
+        {
+         "type": "photo",
+         "node": "6591bed65c39c",
+         "src": "https://buildsbycarly.com/files/2024/01/cades-cove.jpg",
+         "alt": "cades-cove"
+        }
+       ],
+       "sub": []
+      },
+      {
+       "w": "640px",
+       "wpct": 50,
+       "bg": "none",
+       "bgc": "rgba(0, 0, 0, 0)",
+       "mods": [
+        {
+         "type": "heading",
+         "node": "6591bed65c3c3",
+         "text": "LANDMARKS",
+         "tag": "H3",
+         "font": "\"Semplicita Pro\"|16px"
+        },
+        {
+         "type": "rich-text",
+         "node": "6591bed65c3c4",
+         "html": "<p><span>CADES COVE</span></p>",
+         "font": "16px"
+        },
+        {
+         "type": "rich-text",
+         "node": "6591bed65c3c5",
+         "html": "<p><span>Cades Cove in the Great Smoky Mountains National Park offers a serene and picturesque glimpse into the region's historical and natural beauty. This beloved valley is a haven for wildlife, historical structures, and breathtaking landscapes. Visitors can explore the area by car, bike, or on foot, encountering historic homesteads, grazing deer, and stunning mountain backdrops. Cades Cove isn't just a scenic drive; it's a tranquil escape that connects you with the heritage and untouched beauty of the Smokies.</span></p>",
+         "font": "16px"
+        },
+        {
+         "type": "button",
+         "node": "6591bed65c3c6",
+         "text": "VISIT WEBSITE",
+         "href": "https://www.nps.gov/grsm/planyourvisit/cadescove.htm"
+        }
+       ],
+       "sub": []
+      }
+     ],
+     [
+      {
+       "w": "640px",
+       "wpct": 50,
+       "bg": "none",
+       "bgc": "rgba(0, 0, 0, 0)",
+       "mods": [
+        {
+         "type": "heading",
+         "node": "6591bed65c3d8",
+         "text": "LANDMARKS",
+         "tag": "H3",
+         "font": "\"Semplicita Pro\"|16px"
+        },
+        {
+         "type": "rich-text",
+         "node": "6591bed65c3d9",
+         "html": "<p><span>MOUNT LeCONTE</span></p>",
+         "font": "16px"
+        },
+        {
+         "type": "rich-text",
+         "node": "6591bed65c3da",
+         "html": "<p><span>Mt. LeConte, one of the highest peaks in the Great Smoky Mountains National Park, offers a truly rewarding experience for avid hikers and nature lovers. With trails that showcase stunning vistas, diverse flora, and often a glimpse of local wildlife, it's a hiker's paradise. The journey to the summit provides various challenging yet scenic routes, each leading to breathtaking views and the sense of accomplishment that comes with reaching one of the park's most famous landmarks. Mt. LeConte isn't just a hike; it's an adventure that immerses you in the heart of the Smokies' natural splendor.</span></p>",
+         "font": "16px"
+        },
+        {
+         "type": "button",
+         "node": "6591bed65c3db",
+         "text": "VISIT WEBSITE",
+         "href": "https://hikinginthesmokys.com/mt-leconte-via-alum-cave-trail"
+        }
+       ],
+       "sub": []
+      },
+      {
+       "w": "640px",
+       "wpct": 50,
+       "bg": "none",
+       "bgc": "rgba(0, 0, 0, 0)",
+       "mods": [
+        {
+         "type": "photo",
+         "node": "6591bed65c3a1",
+         "src": "https://buildsbycarly.com/files/2024/01/lecont.jpg",
+         "alt": "lecont"
+        }
+       ],
+       "sub": []
+      }
+     ],
+     [
+      {
+       "w": "640px",
+       "wpct": 50,
+       "bg": "none",
+       "bgc": "rgba(0, 0, 0, 0)",
+       "mods": [
+        {
+         "type": "photo",
+         "node": "6591bed65c3df",
+         "src": "https://buildsbycarly.com/files/2024/01/lake.jpg",
+         "alt": "lake"
+        }
+       ],
+       "sub": []
+      },
+      {
+       "w": "640px",
+       "wpct": 50,
+       "bg": "none",
+       "bgc": "rgba(0, 0, 0, 0)",
+       "mods": [
+        {
+         "type": "heading",
+         "node": "6591bed65c3e0",
+         "text": "LANDMARKS",
+         "tag": "H3",
+         "font": "\"Semplicita Pro\"|16px"
+        },
+        {
+         "type": "rich-text",
+         "node": "6591bed65c3e3",
+         "html": "<p><span>FONTANA LAKE</span></p>",
+         "font": "16px"
+        },
+        {
+         "type": "rich-text",
+         "node": "6591bed65c3e1",
+         "html": "<p><span>Fontana Lake, nestled in the Great Smoky Mountains, offers a tranquil and picturesque setting for water enthusiasts and nature lovers. This vast and pristine lake is ideal for boating, fishing, and swimming, surrounded by lush forests and rolling hills. Visitors can enjoy the peaceful waters, explore secluded coves, or simply relax and take in the stunning mountain views. Fontana Lake is more than just a body of water; it's a serene escape where the beauty of nature and the joy of outdoor activities combine in perfect harmony.</span></p>",
+         "font": "16px"
+        },
+        {
+         "type": "button",
+         "node": "6591bed65c3e2",
+         "text": "VISIT WEBSITE",
+         "href": "https://www.greatsmokies.com/fontana-lake-dam/"
+        }
+       ],
+       "sub": []
+      }
+     ],
+     [
+      {
+       "w": "640px",
+       "wpct": 50,
+       "bg": "none",
+       "bgc": "rgba(0, 0, 0, 0)",
+       "mods": [
+        {
+         "type": "heading",
+         "node": "6591d16a00953",
+         "text": "LANDMARKS",
+         "tag": "H3",
+         "font": "\"Semplicita Pro\"|16px"
+        },
+        {
+         "type": "rich-text",
+         "node": "6591d16d80185",
+         "html": "<p><span>HORSEBACK RIDING</span></p>",
+         "font": "16px"
+        },
+        {
+         "type": "rich-text",
+         "node": "6591d179ae42f",
+         "html": "<p><span>Horseback riding in the Smoky Mountains provides a unique and memorable way to explore the area's natural beauty. From leisurely trail rides through quiet forests to more adventurous treks across rolling hills, horseback riding offers a different perspective of the Smokies. It's an activity that connects you with nature, allowing for peaceful encounters with the region's diverse flora and fauna. Whether you're a seasoned rider or trying it for the first time, horseback riding in the Smokies is an experience that combines adventure, relaxation, and the picturesque scenery of Tennessee.</span></p>",
+         "font": "16px"
+        },
+        {
+         "type": "button",
+         "node": "6591d17fe028d",
+         "text": "VISIT WEBSITE",
+         "href": "https://www.nps.gov/grsm/planyourvisit/horseriding.htm"
+        }
+       ],
+       "sub": []
+      },
+      {
+       "w": "640px",
+       "wpct": 50,
+       "bg": "none",
+       "bgc": "rgba(0, 0, 0, 0)",
+       "mods": [
+        {
+         "type": "photo",
+         "node": "6591d15ab513d",
+         "src": "https://buildsbycarly.com/files/2024/01/horseback-riding.jpg",
+         "alt": "horseback-riding"
+        }
+       ],
+       "sub": []
+      }
+     ],
+     [
+      {
+       "w": "640px",
+       "wpct": 50,
+       "bg": "none",
+       "bgc": "rgba(0, 0, 0, 0)",
+       "mods": [
+        {
+         "type": "photo",
+         "node": "6591bed65c3d7",
+         "src": "https://buildsbycarly.com/files/2024/01/gap.jpg",
+         "alt": "gap"
+        }
+       ],
+       "sub": []
+      },
+      {
+       "w": "640px",
+       "wpct": 50,
+       "bg": "none",
+       "bgc": "rgba(0, 0, 0, 0)",
+       "mods": [
+        {
+         "type": "heading",
+         "node": "6591d186d2c3d",
+         "text": "LANDMARKS",
+         "tag": "H3",
+         "font": "\"Semplicita Pro\"|16px"
+        },
+        {
+         "type": "rich-text",
+         "node": "6591d18823db3",
+         "html": "<p><span>NEWFOUND GAP</span></p>",
+         "font": "16px"
+        },
+        {
+         "type": "rich-text",
+         "node": "6591d189617e6",
+         "html": "<p><span>Newfound Gap, straddling the border between Tennessee and North Carolina, offers one of the most scenic drives in the Great Smoky Mountains National Park. This stunning route, rising to an elevation of over 5,000 feet, provides spectacular views of the surrounding mountains and valleys. It's a place where visitors can experience the serene beauty of the highlands, with opportunities for memorable photographs, peaceful hikes, and encountering diverse wildlife. Newfound Gap isn't just a road; it's a journey through some of the most breathtaking landscapes in the Smokies.</span></p>",
+         "font": "16px"
+        },
+        {
+         "type": "button",
+         "node": "6591d19818962",
+         "text": "VISIT WEBSITE",
+         "href": "https://www.nps.gov/grsm/planyourvisit/nfg.htm"
+        }
+       ],
+       "sub": []
+      }
+     ],
+     [
+      {
+       "w": "640px",
+       "wpct": 50,
+       "bg": "none",
+       "bgc": "rgba(0, 0, 0, 0)",
+       "mods": [
+        {
+         "type": "heading",
+         "node": "6591d199535ff",
+         "text": "LANDMARKS",
+         "tag": "H3",
+         "font": "\"Semplicita Pro\"|16px"
+        },
+        {
+         "type": "rich-text",
+         "node": "6591d19a8d1f2",
+         "html": "<p><span>APPALACIAN TRAIL</span></p>",
+         "font": "16px"
+        },
+        {
+         "type": "rich-text",
+         "node": "6591d19e7521e",
+         "html": "<p><span>The Appalachian Trail, winding through the Great Smoky Mountains, is a legendary path that offers hikers an immersive experience in one of America's most beautiful landscapes. This iconic trail provides a range of experiences, from challenging ascents to tranquil walks amidst lush greenery. Whether embarking on a short day hike or a longer journey, the Appalachian Trail invites adventurers to explore the rich biodiversity, stunning vistas, and serene backcountry of the Smokies. It's not just a trail; it's an adventure that connects you with the heart of the wilderness and the spirit of exploration.</span></p>",
+         "font": "16px"
+        },
+        {
+         "type": "button",
+         "node": "6591d1a4cf4d6",
+         "text": "VISIT WEBSITE",
+         "href": "https://www.tnvacation.com/local/gatlinburg-appalachian-national-scenic-trail"
+        }
+       ],
+       "sub": []
+      },
+      {
+       "w": "640px",
+       "wpct": 50,
+       "bg": "none",
+       "bgc": "rgba(0, 0, 0, 0)",
+       "mods": [
+        {
+         "type": "photo",
+         "node": "6591d15f09478",
+         "src": "https://buildsbycarly.com/files/2024/01/appalacian-trail.jpg",
+         "alt": "appalacian-trail"
+        }
+       ],
+       "sub": []
+      }
+     ],
+     [
+      {
+       "w": "640px",
+       "wpct": 50,
+       "bg": "none",
+       "bgc": "rgba(0, 0, 0, 0)",
+       "mods": [
+        {
+         "type": "photo",
+         "node": "6591d164015b5",
+         "src": "https://buildsbycarly.com/files/2024/01/atv.jpg",
+         "alt": "atv"
+        }
+       ],
+       "sub": []
+      },
+      {
+       "w": "640px",
+       "wpct": 50,
+       "bg": "none",
+       "bgc": "rgba(0, 0, 0, 0)",
+       "mods": [
+        {
+         "type": "heading",
+         "node": "6591bed65c396",
+         "text": "LANDMARKS",
+         "tag": "H3",
+         "font": "\"Semplicita Pro\"|16px"
+        },
+        {
+         "type": "rich-text",
+         "node": "6591bed65c3a6",
+         "html": "<p><span>AUTO TOURING</span></p>",
+         "font": "16px"
+        },
+        {
+         "type": "rich-text",
+         "node": "6591bed65c3a7",
+         "html": "<p><span>Auto touring in the Smoky Mountains offers a leisurely way to soak in the breathtaking landscapes from the comfort of your vehicle. Scenic drives like the Cades Cove Loop Road provide stunning views and glimpses of wildlife, perfect for those who love to explore at their own pace. For the more adventurous, ATV rides through the Smokies promise an exhilarating experience, allowing you to traverse rugged trails and discover hidden gems of the mountain terrain. Whether you're behind the wheel of a car or riding an ATV, the Smokies offer an unforgettable journey through some of Tennessee's most captivating scenery.</span></p>",
+         "font": "16px"
+        },
+        {
+         "type": "button",
+         "node": "6591bed65c3af",
+         "text": "VISIT WEBSITE",
+         "href": "https://www.smokymountainadventurerides.com"
+        }
+       ],
+       "sub": []
+      }
+     ]
+    ]
+   },
+   {
+    "node": "6591bed65c3aa",
+    "bg": "url(\"https://brokerage.agent.wallacetn.com/files/2023/08/oakridge.jpg\")",
+    "bgColor": "rgb(10, 26, 45)",
+    "overlay": "rgba(0, 0, 0, 0)",
+    "overlayImg": "linear-gradient(135deg, rgba(10, 34, 62, 0.95) 23%, rgba(201, 212, 208, 0.75) 94%)",
+    "groups": [
+     [
+      {
+       "w": "734.805px",
+       "wpct": 67,
+       "bg": "none",
+       "bgc": "rgba(0, 0, 0, 0)",
+       "mods": [
+        {
+         "type": "rich-text",
+         "node": "6591bed65c3a9",
+         "html": "<h3><span>CONTACT </span><strong><span>US!</span></strong></h3>",
+         "font": "42px"
+        },
+        {
+         "type": "rich-text",
+         "node": "6591bed65c3ab",
+         "html": "<p><span>I look forward to helping you achieve your current and future investment goals. Please contact me with any questions or when you are ready to start your investment!</span></p>",
+         "font": "16px"
+        }
+       ],
+       "sub": []
+      },
+      {
+       "w": "365.203px",
+       "wpct": 33,
+       "bg": "none",
+       "bgc": "rgba(0, 0, 0, 0)",
+       "mods": [
+        {
+         "type": "button",
+         "node": "6591bed65c3a8",
+         "text": "GET IN TOUCH",
+         "href": "/contact"
+        }
+       ],
+       "sub": []
+      }
+     ]
+    ]
+   },
+   {
+    "node": "h3sbdol2pw9g",
+    "bg": "none",
+    "bgColor": "rgb(10, 34, 64)",
+    "overlay": "rgba(0, 0, 0, 0)",
+    "overlayImg": "none",
+    "groups": [
+     [
+      {
+       "w": "1345px",
+       "wpct": 100,
+       "bg": "none",
+       "bgc": "rgba(0, 0, 0, 0)",
+       "mods": [
+        {
+         "type": "photo",
+         "node": "fp49x6oi5z7u",
+         "src": "https://buildsbycarly.com/files/2024/01/Footer-Logo-300x113.png",
+         "alt": "Footer-Logo"
+        },
+        {
+         "type": "heading",
+         "node": "p8htrem7j3wa",
+         "text": "(865) 505-0514",
+         "tag": "H2",
+         "font": "Helvetica|51px"
+        },
+        {
+         "type": "rich-text",
+         "node": "zg842ihf1nta",
+         "html": "<p>WEST OFFICE | 865-693-1111 | info@wallacetn.com | 106 N. Peters Road | Knoxville, TN 37923</p>",
+         "font": "16px"
+        }
+       ],
+       "sub": []
+      }
+     ],
+     [
+      {
+       "w": "269px",
+       "wpct": 20,
+       "bg": "none",
+       "bgc": "rgba(0, 0, 0, 0)",
+       "mods": [
+        {
+         "type": "photo",
+         "node": "tznia2pb0f35",
+         "src": "https://brokerage.agent.wallacetn.com/files/2023/09/Wallace-Footer-Logo-300x214-1.png",
+         "alt": "Wallace-Footer-Logo-300x214-1.png"
+        }
+       ],
+       "sub": []
+      },
+      {
+       "w": "269px",
+       "wpct": 20,
+       "bg": "none",
+       "bgc": "rgba(0, 0, 0, 0)",
+       "mods": [
+        {
+         "type": "photo",
+         "node": "17kdgmbf3pzl",
+         "src": "https://brokerage.agent.wallacetn.com/files/2023/09/Wallace-Luxury-Footer-Logo.png",
+         "alt": "Wallace-Luxury-Footer-Logo.png"
+        }
+       ],
+       "sub": []
+      },
+      {
+       "w": "269px",
+       "wpct": 20,
+       "bg": "none",
+       "bgc": "rgba(0, 0, 0, 0)",
+       "mods": [
+        {
+         "type": "photo",
+         "node": "sx45ibfh20cn",
+         "src": "https://brokerage.agent.wallacetn.com/files/2023/09/LeadingRE-Footer-Logo-1536x646-1.png",
+         "alt": "LeadingRE-Footer-Logo-1536x646-1.png"
+        }
+       ],
+       "sub": []
+      },
+      {
+       "w": "269px",
+       "wpct": 20,
+       "bg": "none",
+       "bgc": "rgba(0, 0, 0, 0)",
+       "mods": [
+        {
+         "type": "photo",
+         "node": "3emajnrxz4iw",
+         "src": "https://images-static.moxiworks.com/static/images/br/images/eho-89x83.png",
+         "alt": "eho-89x83.png"
+        }
+       ],
+       "sub": []
+      },
+      {
+       "w": "269px",
+       "wpct": 20,
+       "bg": "none",
+       "bgc": "rgba(0, 0, 0, 0)",
+       "mods": [
+        {
+         "type": "photo",
+         "node": "183m4yh0s9cu",
+         "src": "https://images-static.moxiworks.com/static/images/br/images/realtor_white-71x83.png",
+         "alt": "realtor_white-71x83.png"
+        }
+       ],
+       "sub": []
+      }
+     ],
+     [
+      {
+       "w": "1345px",
+       "wpct": 100,
+       "bg": "none",
+       "bgc": "rgba(0, 0, 0, 0)",
+       "mods": [
+        {
+         "type": "rich-text",
+         "node": "56yc2ghe91i3",
+         "html": "<p><span>\u00a92023 Wallace Real Estate. All Rights Reserved.&nbsp;Not intended as a solicitation if your property is already listed by another broker. Affiliated real estate agents are independent contractor sales associates, not employees. Wallace fully supports the principles of the Fair Housing Act and the Equal Opportunity Act.&nbsp;</span></p>",
+         "font": "16px"
+        },
+        {
+         "type": "rich-text",
+         "node": "pcsu5ibj3lq8",
+         "html": "<p><span><a href=\"/terms-of-use\">Terms Of Use</a> | <a href=\"/privacy-policy\">Privacy Policy</a> | <a href=\"/accessibility-statement/\">Accessibility Statement</a> | <a href=\"/fair-housing-notice/\">Fair Housing Notice</a></span></p>",
+         "font": "16px"
+        }
+       ],
+       "sub": []
+      }
+     ]
+    ]
+   }
+  ]
+ }
+}
