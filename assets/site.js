@@ -1,5 +1,9 @@
 (function(){
-var d=document,b=d.body;
+var d=document,b=d.body;d.documentElement.classList.add('js');
+var rm=matchMedia('(prefers-reduced-motion: reduce)').matches;
+var rv=[].slice.call(d.querySelectorAll('[data-reveal]'));
+rv.forEach(function(el){var p=el.parentElement,sib=p?[].filter.call(p.children,function(c){return c.hasAttribute('data-reveal')}):[];var i=sib.indexOf(el);if(i>0)el.style.setProperty('--d',Math.min(i,6)*0.08+'s')});
+if(rm||!('IntersectionObserver' in window))rv.forEach(function(el){el.classList.add('in')});else{var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{rootMargin:'0px 0px -6% 0px',threshold:0.05});rv.forEach(function(el){io.observe(el)})}
 // main menu
 var mb=d.querySelector('.menu-button'),nav=d.getElementById('site-nav');
 function setMenu(open){b.classList.toggle('menu-open',open);mb.setAttribute('aria-expanded',open);mb.querySelector('.menu-label').textContent=open?'Close':'Menu';if(!open)closeSubs()}

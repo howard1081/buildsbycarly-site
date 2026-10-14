@@ -43,6 +43,7 @@ def fin_prices():
         out[n] = {'block': ms[i+1]['text'].strip(), 'elevated': ms[i+2]['text'].strip(), 'deposit': ms[i+3]['text'].strip()}
     return out
 PRICES = fin_prices()
+MIN_PRICE = min((p['block'] for p in PRICES.values()), key=lambda v: int(re.sub(r'\D', '', v)))
 TERMS = clean(next(m['html'] for m in flat(D['financing']['rows'][2]) if m['type'] == 'rich-text')).replace('Build by Carly', 'Builds by Carly').replace('Mountain View’s', 'mountain views').replace("Mountain View's", 'mountain views').replace('forward..', 'forward.')
 
 def home_cards():
@@ -120,7 +121,7 @@ def nav(cur):
 def footer():
     f = B.footer()
     logos = re.search(r'<div class="f-logos">(.*?)</div>', f, re.S).group(1)
-    logos = re.sub(r'https://brokerage.agent.wallacetn.com/files/2023/09/([\w.-]+)', r'assets/img/wallace-\1', logos)
+    logos = re.sub(r'https://brokerage.agent.wallacetn.com/files/2023/09/([\w.-]+)', r'assets/img/wallace-\1', logos).replace(' loading="lazy"', '')
     legal = re.search(r'<div class="f-legal">(.*?)</div>', f, re.S).group(1)
     legal = legal.replace('>Fair Housing Notice<', '>Fair Housing Notice (PDF)<')
     def grp(t, items): return f'<div><h2 class="footer-heading">{t}</h2><ul>' + ''.join(f'<li><a href="{h}">{esc(n)}</a></li>' for n, h in items) + '</ul></div>'
@@ -161,7 +162,7 @@ def shell(fn, title, body, desc=None, og=None):
 # ---------- components ----------
 def closing_cta(title='Discuss your build', model=None):
     href = f'contact.html?model={model.replace(" ", "+")}' if model else 'contact.html'
-    return f'''<section class="section closing-cta"><div class="container cta-grid"><h2>{esc(title)}</h2><div>
+    return f'''<section class="section closing-cta">{RIDGE}<div class="container cta-grid"><h2>{esc(title)}</h2><div>
 <p>Tell Carly which model, area and timing you have in mind. She can walk you through land options, foundation choices, pricing and the next steps for your project.</p>
 <div class="button-row">{button("Contact Carly", href)}{button("Start your project", "get-on-our-list.html#application", "secondary-light")}</div></div></div></section>'''
 
@@ -187,7 +188,7 @@ def gallery(g, name, gi):
 
 def model_page(key):
     d = MD[key]; name = d['name']; p = d['price']; q = name.replace(' ', '+')
-    facts = ''.join(f'<li>{esc(x)}</li>' for x in [d['area'], 'Block or elevated foundation', 'Site-built in Sevier County'] if x)
+    facts = ''.join(f'<li><i class="fa-solid fa-{i}" aria-hidden="true"></i> {esc(x)}</li>' for i, x in zip(['ruler-combined', 'layer-group', 'location-dot'], [d['area'], 'Block or elevated foundation', 'Site-built in Sevier County']) if x)
     specs = ''.join(f'<li>{B.icon(ic)}<span>{esc(t)}</span></li>' for ic, t in d['specs'])
     gals = ''.join(gallery(g, name, i) for i, g in enumerate(d['galleries']))
     feats = d['features'] or []
@@ -249,7 +250,7 @@ def home():
 <p class="eyebrow">Builds by Carly</p><h1 class="home-title">Luxury tiny homes in the Smoky Mountains</h1>
 <p class="lead">{esc(words(txt, 40))}</p><div class="button-row">{button('Explore the models', '#models')}{button('View pricing', 'financing.html', 'secondary')}</div>
 <p class="fact-line">Site-built homes in Sevier County, Tennessee</p></div>
-<figure class="home-hero-media"><img src="{esc(hero_img)}" alt="A completed Builds by Carly A-frame tiny home in the Smoky Mountains" width="1600" height="1200" fetchpriority="high"></figure></div></section>
+<figure class="home-hero-media"><img src="{esc(hero_img)}" alt="A completed Builds by Carly A-frame tiny home in the Smoky Mountains" width="1600" height="1200" fetchpriority="high"><div class="hero-badge"><span class="icon-chip"><i class="fa-solid fa-house-chimney" aria-hidden="true"></i></span><span><span class="label">5 models from</span><span class="price">{esc(MIN_PRICE)}</span></span></div></figure></div></section>
 <section class="section" id="models"><div class="container"><div class="section-head"><div><h2>Find your model</h2><p class="intro">{esc(intro)}</p></div></div><div class="card-grid cols-3 model-grid">{cards}</div></div></section>
 <section class="section section-soft"><div class="container"><h2>Why Builds by Carly</h2><div class="card-grid cols-4">{difh}</div></div></section>
 <section class="section"><div class="container"><div class="section-head"><h2>How it works</h2>{tlink('See the full process', 'get-on-our-list.html')}</div><ol class="steps">{stepsh}</ol></div></section>
@@ -348,6 +349,132 @@ def process():
 {closing_cta()}'''
     return shell('get-on-our-list.html', 'How it works | Builds by Carly', body, words(intro, 26))
 
+import charts as C
+def ic(name): return f'<i class="fa-solid fa-{name}" aria-hidden="true"></i>'
+def chip(name): return f'<span class="icon-chip">{ic(name)}</span>'
+def city_data(r):
+    ms = list(flat(r)); d = {}
+    dual = next(m for m in ms if m['type'] == 'dual-color-heading')
+    d['city'] = tc((dual.get('a', '') + ' ' + dual.get('b', '')).replace('PERFORMANCE', '').strip())
+    rt = [m for m in ms if m['type'] == 'rich-text']
+    sm = re.match(r'Score\s*(\d+)/100\s*(.*)', plain(rt[0]['html']))
+    d['score'], d['summary'] = (int(sm.group(1)), sm.group(2)) if sm else (None, plain(rt[0]['html']))
+    d['metrics'] = []
+    for m in ms:
+        if m['type'] == 'info-box':
+            ls = lines(m['html']); d['metrics'].append((ls[0].rstrip(':'), ls[1] if len(ls) > 1 else '', ' '.join(ls[2:]).strip('()')))
+    d['photo'] = im(next((m['src'] for m in ms if m['type'] in ('photo', 'uabb-photo')), ''))
+    d['stays'] = []
+    for m in ms:
+        if m['type'] == 'uabb-numbers':
+            ls = [x.strip() for x in m['text'].split('\n') if x.strip()]
+            d['stays'].append((f'{ls[1]} {ls[2].lower()}', float(ls[0].rstrip('%'))))
+    nt = next((m for m in rt if 'MICRO-NOTES' in plain(m['html'])), None)
+    d['notes'] = [x for x in lines(nt['html']) if 'MICRO-NOTES' not in x] if nt else []
+    return d
+
+def rental():
+    cities = [city_data(r) for r in D['rental-metrics']['rows'][:3]]
+    MI = {'Annual Revenue': 'sack-dollar', 'Occupancy Rate': 'calendar-check', 'Avg Daily Rate (ADR)': 'tag'}
+    cards = ''
+    for c in cities:
+        mets = ''.join(f'<li>{chip(MI.get(l, "chart-simple"))}<span><span class="label">{esc(l)}</span><span class="metric-value">{esc(v)}</span><span class="note">{esc(n)}</span></span></li>' for l, v, n in c['metrics'])
+        ring = C.ring(c['score'], 'Market score as published') if c['score'] else ''
+        cards += f'<article class="city-card"><div class="city-photo" style="--bg:url(\'{c["photo"].replace("assets/", "", 1)}\')"><h3>{esc(c["city"])}</h3></div><div class="city-body">{ring}<p>{esc(c["summary"])}</p><ul class="metric-list">{mets}</ul></div></article>'
+    def series(i): return [(c['city'], c['metrics'][i][1]) for c in cities if len(c['metrics']) > i]
+    bars = C.hbars(series(0), 'Annual revenue, typical 1–2 bedroom') + C.hbars(series(1), 'Occupancy rate') + C.hbars(series(2), 'Average daily rate (ADR)')
+    stacks = ''
+    for c in cities:
+        tot = sum(p for _, p in c['stays'])
+        rows = [(l, p, p <= 100) for l, p in c['stays']]
+        note = ''
+        if any(not ok for _, _, ok in rows): note = 'One published share is above 100%, so it is shown as under review until the source is confirmed.'
+        elif abs(tot - 100) > 1.5: note = f'Published shares total {tot:g}%, so the bar is scaled to fit. Source to be confirmed.'
+        stacks += C.stacked(rows, f'{c["city"]}: listings by minimum stay', note)
+    notes = ''.join(f'<article class="card"><span class="icon-chip">{ic("lightbulb")}</span><h3 class="card-title">{esc(c["city"])} notes</h3><ul class="tick-list">' + ''.join(f'<li>{esc(n)}</li>' for n in c['notes']) + '</ul></article>' for c in cities)
+    th = ''.join(f'<th scope="col">{esc(c["city"])}</th>' for c in cities)
+    trs = ''.join(f'<tr><th scope="row">{esc(cities[0]["metrics"][i][0])}</th>' + ''.join(f'<td>{esc(c["metrics"][i][1])}</td>' for c in cities) + '</tr>' for i in range(3))
+    body = f'''<section class="page-intro data-intro"><div class="container"><nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="index.html">Home</a></li><li>Resources</li><li aria-current="page">Rental metrics</li></ol></nav>
+<p class="eyebrow">{ic("chart-line")} Rental metrics</p><h1>Smoky Mountain rental market snapshot</h1><p class="lead">A side-by-side look at short-term rental performance in Sevierville, Pigeon Forge and Gatlinburg, using the figures Builds by Carly publishes for each market.</p>
+<p class="note">Figures as published. Source, reporting period and sample size are being confirmed.</p></div></section>
+<section class="section section-tight"><div class="container"><div class="city-grid">{cards}</div></div></section>
+<section class="section section-soft"><div class="container"><h2>How the markets compare</h2><div class="chart-grid">{bars}</div>
+<div class="table-wrap"><table class="data-table"><caption>Market comparison table</caption><thead><tr><th scope="col">Metric</th>{th}</tr></thead><tbody>{trs}</tbody></table></div></div></section>
+<section class="section"><div class="container"><h2>How long guests must stay</h2><p class="intro">The share of listings in each market by minimum-stay requirement. This shows booking rules, not how long guests actually stay.</p><div class="stack-list">{stacks}</div></div></section>
+<section class="section section-soft"><div class="container"><h2>Market notes</h2><div class="card-grid cols-3">{notes}</div></div></section>
+{closing_cta('Discuss a property scenario')}'''
+    return shell('rental-metrics.html', 'Rental metrics | Builds by Carly', body, 'Short-term rental revenue, occupancy, ADR and minimum-stay data for Sevierville, Pigeon Forge and Gatlinburg.')
+
+def short(v):
+    x = C.num(v)
+    if v.startswith('$') and x >= 1e9: return f'${x/1e9:.2f}B'
+    if v.startswith('$') and x >= 1e6: return f'${x/1e6:.0f}M'
+    if not v.startswith('$') and x >= 1e4: return f'{x/1e3:.1f}K'
+    return v
+def tourism():
+    R = D['tourism-breakdown']['rows']
+    r0 = list(flat(R[0])); intro = plain(next(m['html'] for m in r0 if m['type'] == 'rich-text'))
+    photo = im(next(m['src'] for m in r0 if m['type'] in ('photo', 'uabb-photo')))
+    btns = ''.join(button(m['text'], link(m['href']), 'primary' if i == 0 else 'secondary') for i, m in enumerate(m for m in r0 if m['type'] == 'button'))
+    mets = []; cur = None
+    for m in flat(R[1]):
+        if m['type'] == 'heading':
+            if cur and 'value' in cur and 'sub' not in cur: cur['sub'] = m['text'].strip()
+            elif m['text'].strip() not in ('BY THE NUMBERS',): cur = {'label': m['text'].strip()}; mets.append(cur)
+        elif m['type'] == 'numbers' and cur: cur['value'] = (m.get('text') or '').strip().split('\n')[0]
+    mets = [x for x in mets if 'value' in x]
+    src1 = plain(next((m['html'] for m in flat(R[1]) if m['type'] == 'rich-text'), ''))
+    pv = re.search(r'([\d.]+M)\s+GSMNP visits\s*\((\d{4})\)', intro)
+    MI = {'SPENDING': 'sack-dollar', 'EMPLOYMENT': 'people-group', 'LABOR INCOME': 'money-bill-wave', 'STATE TAXES': 'landmark', 'LOCAL TAXES': 'building-columns', 'COUNTY POSITION': 'trophy'}
+    top = [x for x in mets if x['label'] in ('SPENDING', 'EMPLOYMENT')]
+    big = ''.join(f'<article class="kpi">{chip(MI[x["label"]])}<span class="label">{esc(sc(x["label"]))}</span><span class="kpi-value">{esc(short(x["value"]))}</span><span class="note">{esc(sc(x.get("sub", "")))} · exact {esc(x["value"])}</span></article>' for x in top)
+    if pv: big += f'<article class="kpi">{chip("mountain-sun")}<span class="label">Park visits</span><span class="kpi-value">{pv.group(1)}</span><span class="note">Great Smoky Mountains National Park, {pv.group(2)}</span></article>'
+    small = ''.join(f'<li>{chip(MI.get(x["label"], "chart-simple"))}<span><span class="label">{esc(sc(x["label"]))}</span><strong>{esc(short(x["value"]))}</strong> <span class="note">{esc(sc(x.get("sub", "")))}</span></span></li>' for x in mets if x not in top)
+    cats = []; cur = None; r2 = list(flat(R[2]))
+    for m in r2:
+        if m['type'] == 'heading' and not m['text'].strip().startswith('(') and m['text'].strip() not in ('VISITOR SPEND',): cur = [sc(m['text'].strip().rstrip('*')), 0, '']; cats.append(cur)
+        elif m['type'] == 'heading' and m['text'].strip().startswith('(') and cur: cur[1] = float(m['text'].strip('()% '))
+        elif m['type'] == 'uabb-numbers' and cur: cur[2] = m['text'].strip()
+    cats = [c for c in cats if c[1]]
+    r2t = [plain(m['html']) for m in r2 if m['type'] == 'rich-text']
+    total = next((short(x['value']) for x in mets if x['label'] == 'SPENDING'), '')
+    don = C.donut([tuple(c) for c in cats], 'Visitor spending by industry', total, 'visitor spending')
+    r4 = list(flat(R[4])); groups = []; cur = None
+    for m in r4:
+        if m['type'] == 'dual-color-heading': cur = {'title': tc((m.get('a', '') + ' ' + m.get('b', '')).strip()), 'rows': []}; groups.append(cur)
+        elif m['type'] == 'uabb-numbers' and cur:
+            ls = [x.strip() for x in m['text'].split('\n') if x.strip()]
+            cur['rows'].append((ls[1].split()[0], ls[0], 'Est' in ' '.join(ls[1:])))
+    gt = {'Spending by Industry': 'Annual visitor spending', 'Tourism Related Taxes': 'Tourism-related taxes'}
+    trend = ''.join(C.columns(g['rows'], gt.get(g['title'], g['title'])) for g in groups)
+    drv = []; cur = None
+    for m in flat(R[3]):
+        if m['type'] == 'heading' and m['text'].strip() not in ('DEMAND DRIVERS',): cur = [m['text'].strip(), '', None]; drv.append(cur)
+        elif m['type'] == 'rich-text' and cur: cur[1] = plain(m['html'])
+        elif m['type'] == 'button' and cur: cur[2] = m
+    dintro = plain(next(m['html'] for m in flat(R[3]) if m['type'] == 'rich-text'))
+    DI = ['mountain', 'ticket', 'people-roof']
+    drvh = ''.join(f'<article class="card">{chip(DI[i % 3])}<h3 class="card-title">{esc(tc(t))}</h3><p>{esc(b)}</p>{tlink("Explore build areas", "area-overview.html")}</article>' for i, (t, b, _) in enumerate(drv) if b)
+    r5 = list(flat(R[5]))
+    srcs = ''.join(f'<div class="prose">{clean(m["html"]).replace("{{latest official year}}", "latest edition")}</div>' for m in r5 if m['type'] == 'rich-text')
+    sb = ''.join(tlink(m['text'], link(m['href'])) for m in r5 if m['type'] == 'button')
+    body = f'''<section class="page-intro data-intro"><div class="container split-even align-center"><div><nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="index.html">Home</a></li><li>Resources</li><li aria-current="page">Tourism</li></ol></nav>
+<p class="eyebrow">{ic("compass")} Tourism breakdown</p><h1>Tourism in the Smokies</h1><p class="lead">{esc(intro)}</p><div class="button-row">{btns}</div></div>
+<figure class="intro-media" data-reveal><img src="{esc(photo)}" alt="Smoky Mountains landscape" width="900" height="1200"></figure></div></section>
+<section class="section section-tight"><div class="container"><h2>Sevier County visitor economy</h2><div class="kpi-grid">{big}</div><ul class="mini-stats">{small}</ul><p class="note">{esc(src1).replace("{{latest official year}}", "latest edition")}</p></div></section>
+<section class="section section-soft"><div class="container split-even align-center">{don}<div><h2>Where visitors spend</h2>{''.join(f'<p>{esc(t)}</p>' for t in r2t[:1])}{''.join(f'<p class="note">{esc(t)}</p>' for t in r2t[1:])}</div></div></section>
+<section class="section"><div class="container"><h2>Spending and taxes over time</h2><p class="intro">Striped bars are estimates until the official release.</p><div class="chart-grid cols-2">{trend}</div></div></section>
+<section class="section section-soft"><div class="container"><h2>Why visitors keep coming</h2><p class="intro">{esc(dintro)}</p><div class="card-grid cols-3">{drvh}</div></div></section>
+<section class="section"><div class="container narrow"><h2>Sources and methodology</h2>{srcs}<div class="button-row">{sb}</div></div></section>
+{closing_cta()}'''
+    return shell('tourism-breakdown.html', 'Tourism in the Smokies | Builds by Carly', body, words(intro, 26))
+
+ICONS = {'Site-built construction': 'helmet-safety', 'Foundation options': 'layer-group', 'Land selection support': 'map-location-dot', 'Design for guest use': 'key',
+         'Discuss the project': 'comments', 'Match land and model': 'map', 'Build and prepare for ownership': 'hammer',
+         'Apply to Get Started': 'file-pen', 'Personalized Land Search Begins': 'magnifying-glass-location', 'Land Secured – Initial Deposit Due': 'handshake',
+         'Select Your Tiny Home Model': 'house', 'Sign Agreement – Final Deposit Due': 'file-signature', 'Construction Begins': 'person-digging'}
+RIDGE = '<svg class="ridge" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true"><path d="M0 120V70l120-38 90 26 140-52 110 40 95-30 160 58 120-44 105 30 150-56 120 46 110-28 120 40v48z" fill="currentColor"/></svg>'
+
 def generic(key):
     fn, title = B.PAGES[key]
     html = B2.page(key)
@@ -357,12 +484,21 @@ def generic(key):
     return shell(fn, f'{title} | Builds by Carly', body)
 
 def post(h):
-    h = h.replace('<i class="fa', '<i aria-hidden="true" class="fa')
+    for t, n in ICONS.items():
+        h = h.replace(f'<h3 class="card-title">{t}<', f'<span class="icon-chip"><i class="fa-solid fa-{n}"></i></span><h3 class="card-title">{t}<')
+        h = h.replace(f'<h2 class="card-title">{esc(t)}<', f'<span class="icon-chip"><i class="fa-solid fa-{n}"></i></span><h2 class="card-title">{esc(t)}<')
+    h = h.replace('<article class="card"><h3 class="card-title">', '<article class="card"><span class="icon-chip"><i class="fa-solid fa-star"></i></span><h3 class="card-title">')
+    h = re.sub(r'<(article|figure) class="(card|model-card|city-card|kpi)', r'<\1 data-reveal class="\2', h)
+    h = h.replace('<li class="step">', '<li data-reveal class="step">')
+    h = re.sub(r'<div class="col( |")', r'<div data-reveal class="col\1', h)
+    h = re.sub(r'<h2(?=[ >])(?![^>]*footer-heading)', '<h2 data-reveal', h)
+    h = h.replace('<i class="fa', '<i aria-hidden="true" class="fa').replace('aria-hidden="true" aria-hidden="true"', 'aria-hidden="true"')
+    h = re.sub(r'(<i aria-hidden="true" class="[^"]*") aria-hidden="true"', r'\1', h)
     h = re.sub(r"--bg:url\('assets/", "--bg:url('", h)
     return h
 
 if __name__ == '__main__':
-    out = {'index.html': home(), 'financing.html': financing(), 'contact.html': contact(), 'get-on-our-list.html': process()}
+    out = {'index.html': home(), 'financing.html': financing(), 'contact.html': contact(), 'get-on-our-list.html': process(), 'rental-metrics.html': rental(), 'tourism-breakdown.html': tourism()}
     for k, n in MODELS: out[f'{k}.html'] = model_page(k)
     for k in B.PAGES:
         fn = B.PAGES[k][0]
