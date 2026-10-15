@@ -658,3 +658,5 @@ body{font-size:1.125rem}
 .sec:not(.sec-hero) .g1>.col>h1,.sec:not(.sec-hero) .g1>.col>h2,.sec:not(.sec-hero) .g1>.col>.h2,.sec:not(.sec-hero) .g1>.col>.title{position:static}
 .sec .g1>.col>.search-cta,.sec .g1>.col>.partners,.sec .g1>.col>.quotes,.sec .g1>.col>.btn-row,.sec .g1>.col>.button-row{grid-column:1/-1}
 .search-cta{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:16px}.search-cta p{margin:0;font-size:1.125rem;font-weight:500}
+@media(min-width:900px){.sec:not(.sec-hero) .g1>.col>h1,.sec:not(.sec-hero) .g1>.col>h2,.sec:not(.sec-hero) .g1>.col>.h2,.sec:not(.sec-hero) .g1>.col>.title{grid-row:1;align-self:start;margin-top:2.6rem}
+.sec:not(.sec-hero) .g1>.col>.eyebrow{align-self:start;margin:0}}
