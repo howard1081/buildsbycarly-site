@@ -149,7 +149,7 @@ def shell(fn, title, body, desc=None, og=None):
 <link rel="icon" href="assets/favicon.png"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"><link rel="stylesheet" href="assets/site.css"></head>
-<body><a class="skip-link" href="#main">Skip to content</a>
+<body class="page-{fn.replace('.html', '')}"><a class="skip-link" href="#main">Skip to content</a>
 <header class="site-header"><div class="container header-inner">
 <a class="brand" href="index.html"><img src="assets/Footer-Logo.png" alt="Builds by Carly home" width="132" height="50"></a>
 <button class="menu-button" type="button" aria-expanded="false" aria-controls="site-nav"><span class="menu-icon" aria-hidden="true"></span><span class="menu-label">Menu</span></button>
@@ -251,7 +251,7 @@ def home():
     for m in flat(rows[7]):
         if m['type'] == 'rich-text':
             ls = lines(m['html']); qs.append((ls[0], ' '.join(ls[1:]).strip('"“” ')))
-    qh = ''.join(f'<figure class="card testimonial"><blockquote><p>“{esc(t)}”</p></blockquote><figcaption>{esc(n.title())}</figcaption></figure>' for n, t in qs)
+    qh = ''.join(f'<figure class="card testimonial"><blockquote><p>{esc(t)}</p></blockquote><figcaption>{esc(n.title())}</figcaption></figure>' for n, t in qs)
     fin = plain(next(m['html'] for m in flat(rows[8]) if m['type'] == 'rich-text'))
     cards = ''.join(model_card(MD[k]) for k, _ in MODELS) + '<article class="model-card compare-card"><div class="model-card-body"><h3 class="card-title"><a href="financing.html">Compare all models</a></h3><p>See block and elevated foundation prices for all five homes side by side.</p><span class="text-link" aria-hidden="true">Compare pricing' + ARROW + '</span></div></article>'
     body = f'''<section class="home-hero"><div class="container home-hero-grid"><div class="home-hero-text">

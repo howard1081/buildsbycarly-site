@@ -81,4 +81,28 @@ def guide(key, name):
 {G.closing_cta(f'Build in {name}' if key != 'smoky-mountains' else 'Build near the Smokies')}'''
     return G.shell(f'{key}.html', f'{name} area guide | Builds by Carly', body, words(d['intro'], 26), d['hero'])
 
-def pages(): return {f'{k}.html': guide(k, n) for k, n in GUIDES}
+AREA_DESC = {}
+for _r in G.D['juniper']['rows']:
+    _ms = list(G.flat(_r))
+    if any(m['type'] == 'heading' and 'AREA OVERVIEW' in m['text'] for m in _ms):
+        cur = None
+        for m in _ms:
+            if m['type'] == 'heading' and m['text'].strip() not in ('AREA OVERVIEW',): cur = m['text'].strip()
+            elif m['type'] == 'rich-text' and cur and len(G.plain(m['html'])) > 60: AREA_DESC[cur] = G.plain(m['html'])
+KEYMAP = {'GATLINBURG': 'gatlinburg', 'PIGEON FORGE': 'pigeon-forge', 'SEVIERVILLE': 'sevierville', 'SMOKY MTNS': 'smoky-mountains'}
+def overview():
+    r0 = [m for m in G.flat(G.D['area-overview-2']['rows'][0]) if m['type'] == 'rich-text']
+    intro = next((G.plain(m['html']) for m in r0 if len(G.plain(m['html'])) > 60), 'Explore the areas where Builds by Carly builds.')
+    cards = ''
+    for k, n in GUIDES:
+        d = GD[k]; desc = next((v for kk, v in AREA_DESC.items() if KEYMAP.get(kk) == k), '')
+        cards += f'''<article class="area-card" data-reveal><a href="{k}.html" class="area-card-media"><img src="{esc(d['card'])}" alt="{esc(n)}" loading="lazy" width="800" height="600"></a><div class="area-card-body"><span class="label">{'National park guide' if k == 'smoky-mountains' else 'Area guide'}</span><h2>{esc(n)}</h2><p>{esc(desc)}</p><ul class="area-meta"><li>{G.ic('map-pin')} {len(d['landmarks'])} landmarks</li><li>{G.ic('lightbulb')} {len(d['facts'])} fun facts</li></ul>{G.tlink(f'Explore {n}', f'{k}.html')}</div></article>'''
+    body = f'''<section class="page-intro data-intro"><div class="container"><nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="index.html">Home</a></li><li>Resources</li><li aria-current="page">Area overview</li></ol></nav>
+<p class="eyebrow">{G.ic("map-location-dot")} Area overview</p><h1>Explore build areas</h1><p class="lead">{esc(intro)}</p></div></section>
+<section class="section section-tight"><div class="container"><div class="area-cards">{cards}</div></div></section>
+{G.closing_cta('Build in the Smokies')}'''
+    return G.shell('area-overview.html', 'Area overview | Builds by Carly', body, words(intro, 26))
+def pages():
+    out = {f'{k}.html': guide(k, n) for k, n in GUIDES}
+    out['area-overview.html'] = overview()
+    return out
