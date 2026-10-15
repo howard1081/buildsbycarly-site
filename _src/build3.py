@@ -45,6 +45,7 @@ def fin_prices():
 PRICES = fin_prices()
 MIN_PRICE = min((p['block'] for p in PRICES.values()), key=lambda v: int(re.sub(r'\D', '', v)))
 TERMS = clean(next(m['html'] for m in flat(D['financing']['rows'][2]) if m['type'] == 'rich-text')).replace('Build by Carly', 'Builds by Carly').replace('Mountain View’s', 'mountain views').replace("Mountain View's", 'mountain views').replace('forward..', 'forward.')
+TERMS_LI = ''.join(f'<li><span class="icon-chip"><i class="fa-solid fa-{ic}"></i></span><div>{t}</div></li>' for ic, t in zip(['file-contract', 'circle-info', 'circle-check'], [x for x in re.findall(r'<p[^>]*>(.*?)</p>', TERMS, re.S) if x.strip()] or [TERMS]))
 
 def home_cards():
     ms = list(flat(D['home']['rows'][5])); cards = {}; cur = None; photos = {}
@@ -176,15 +177,22 @@ def model_card(d, h='h3'):
 <span class="text-link" aria-hidden="true">View {esc(d['name'])}{ARROW}</span></div></article>'''
 
 def gallery(g, name, gi):
-    imgs = g['imgs']; n = len(imgs); label = sc(g['label'] or 'Photo gallery')
+    imgs = g['imgs']; n = len(imgs); label = sc(g['label'] or 'Photo gallery'); show = 4
     if label.lower() == 'image gallery': label = 'Photo gallery'
-    items = ''.join(f'<li{EX if i >= 5 else ""}><a href="{esc(u)}" data-caption="{esc(name)} — {esc(label)}, photo {i+1} of {n}" aria-label="Open {esc(name)} photo {i+1} of {n}"><img src="{esc(u)}" alt="{esc(name)} — {esc(label.lower())}, photo {i+1}" loading="lazy" width="800" height="600"></a></li>' for i, u in enumerate(imgs))
-    more = f'<button type="button" class="button button-secondary gallery-more" data-open-gallery="g{gi}">View all {n} photos</button>' if n > 5 else ''
-    vid = ''
+    items = ''
+    for i, u in enumerate(imgs):
+        cls = f'g-tile g{i + 1}' if i < show else 'g-tile extra'
+        more = f'<span class="g-more"><strong>+{n - show}</strong> photos</span>' if i == show - 1 and n > show else ''
+        cap = f'{name} — {label}, photo {i + 1} of {n}'
+        items += f'<li class="{cls}"><a href="{esc(u)}" data-caption="{esc(cap)}" aria-label="Open {esc(name)} photo {i + 1} of {n}"><img src="{esc(u)}" alt="{esc(name)} — {esc(label.lower())}, photo {i + 1}" loading="lazy" width="800" height="600"><span class="g-zoom" aria-hidden="true"><i class="fa-solid fa-expand"></i></span>{more}</a></li>'
+    desc = f'<div class="prose">{g["desc"]}</div>' if g['desc'] else ''
     if g['video']:
-        vid = f'<div class="video" data-yt="{g["video"]}"><img src="https://i.ytimg.com/vi/{g["video"]}/hqdefault.jpg" alt="" loading="lazy" width="480" height="360"><button type="button" class="play" aria-label="Play the {esc(name)} video tour"><i class="fa-solid fa-play" aria-hidden="true"></i></button><a class="video-fallback" href="https://www.youtube.com/watch?v={g["video"]}">Watch on YouTube</a></div>'
-    return f'''<div class="gallery-block"><h3>{esc(label)}</h3>{f'<div class="prose">{g["desc"]}</div>' if g['desc'] else ''}{vid}
-<ul class="gallery" id="g{gi}" aria-label="{esc(name)} {esc(label.lower())}">{items}</ul>{more}</div>'''
+        v = g['video']
+        top = f'''<div class="tour" data-reveal><div class="tour-frame"><div class="video" data-yt="{v}"><img src="https://i.ytimg.com/vi/{v}/hqdefault.jpg" alt="" loading="lazy" width="480" height="360"><button type="button" class="play" aria-label="Play the {esc(name)} video tour"><i class="fa-solid fa-play"></i></button><a class="video-fallback" href="https://www.youtube.com/watch?v={v}">Watch on YouTube</a></div></div>
+<div class="tour-copy"><span class="pill"><i class="fa-solid fa-film"></i> Video tour</span><h3>{esc(label)}</h3>{desc}<p class="tour-count"><i class="fa-regular fa-images"></i> {n} photos · tap any photo to open the viewer</p></div></div>'''
+    else:
+        top = f'<div class="tour tour-text" data-reveal><div class="tour-copy"><span class="pill"><i class="fa-regular fa-images"></i> {n} photos</span><h3>{esc(label)}</h3>{desc}</div></div>'
+    return f'<div class="gallery-block">{top}<ul class="gallery mosaic" id="g{gi}" aria-label="{esc(name)} {esc(label.lower())}">{items}</ul></div>'
 
 def model_page(key):
     d = MD[key]; name = d['name']; p = d['price']; q = name.replace(' ', '+')
@@ -206,12 +214,12 @@ def model_page(key):
 <figure class="model-hero-media"><img src="{esc(d['hero'])}" alt="The {esc(name)} tiny home by Builds by Carly" width="1600" height="1200" fetchpriority="high"></figure></section>
 <section class="section"><div class="container split-even"><div><h2>About the {esc(name)}</h2><div class="prose">{d['info']}</div></div>
 <div><h2 class="h3">Specifications as published</h2><ul class="spec-list">{specs}</ul><p class="note">Confirm exact dimensions, provisions and inclusions with Carly before you commit.</p></div></div></section>
-<section class="section section-soft"><div class="container"><h2>Photos and tour</h2>{gals}</div></section>
-<section class="section"><div class="container"><h2>Pricing</h2><div class="price-pair">
-<div class="card"><span class="label">Block foundation</span><span class="price">{esc(p.get('block', ''))}</span></div>
-<div class="card"><span class="label">Elevated tree-house foundation</span><span class="price">{esc(p.get('elevated', ''))}</span></div>
-<div class="card"><span class="label">Construction deposit</span><span class="price">{esc(p.get('deposit', ''))}</span><div class="note prose">{TERMS}</div></div></div>
-<p>{tlink('Full pricing and terms', 'financing.html')}</p></div></section>
+<section class="section gallery-section"><div class="container"><h2>Photos and tour</h2>{gals}</div></section>
+<section class="section"><div class="container"><div class="section-head"><h2>Pricing</h2>{tlink('Full pricing and terms', 'financing.html')}</div><div class="pricing-grid">
+<div class="price-cards"><article class="price-card"><span class="icon-chip"><i class="fa-solid fa-cubes"></i></span><span class="label">Block foundation</span><span class="price">{esc(p.get('block', ''))}</span><span class="note">Starting price</span></article>
+<article class="price-card price-card-alt"><span class="icon-chip"><i class="fa-solid fa-tree"></i></span><span class="label">Elevated tree-house foundation</span><span class="price">{esc(p.get('elevated', ''))}</span><span class="note">Starting price</span></article>
+<article class="deposit-card"><span class="icon-chip"><i class="fa-solid fa-hand-holding-dollar"></i></span><div><span class="label">Construction deposit</span><span class="price">{esc(p.get('deposit', ''))}</span></div><span class="note">Credited toward the final purchase</span></article></div>
+<aside class="terms-panel" data-reveal><h3>Terms at a glance</h3><ul class="terms-list">{TERMS_LI}</ul></aside></div></div></section>
 {f'<section class="section section-soft"><div class="container"><h2>What sets the {esc(name)} apart</h2><div class="card-grid cols-{min(len(unique), 3) or 1}">{hi}</div></div></section>' if unique else ''}
 {f'<section class="section"><div class="container narrow"><h2>Construction details</h2>{acc}</div></section>' if acc else ''}
 <section class="section section-soft"><div class="container"><div class="section-head"><h2>Related models</h2>{tlink('Explore build areas', 'area-overview.html')}</div><div class="card-grid cols-2">{''.join(model_card(r) for r in rel)}</div></div></section>
@@ -268,15 +276,15 @@ def financing():
     bt = [m for m in r0 if m['type'] == 'button']
     lbl = {'APPLY': 'Apply with the lender', 'CALL US': 'Call the lender', 'EMAIL US': 'Email the lender'}
     lb = ''.join(button(lbl.get(m['text'].strip(), m['text']), link(m['href']), 'primary' if i == 0 else 'secondary') for i, m in enumerate(bt))
-    rows = ''.join(f'<tr><th scope="row"><a href="{k}.html">{esc(n)}</a><span class="row-area">{esc(MD[k]["area"])}</span></th><td data-label="Block foundation">{esc(PRICES[n]["block"])}</td><td data-label="Elevated tree-house foundation">{esc(PRICES[n]["elevated"])}</td><td data-label="Construction deposit">{esc(PRICES[n]["deposit"])}</td><td><a class="text-link" href="contact.html?model={n.replace(" ", "+")}">Ask about {esc(n)}</a></td></tr>' for k, n in MODELS)
+    rows = ''.join(f'<tr data-reveal><th scope="row"><div class="pt-model"><img src="{esc(im(MD[k]["card"].get("photo") or MD[k]["hero"]))}" alt="" width="120" height="90" loading="lazy"><div><a href="{k}.html">{esc(n)}</a><span class="row-area">{esc(MD[k]["area"])}</span></div></div></th><td data-label="Block foundation"><span class="pt-price">{esc(PRICES[n]["block"])}</span></td><td data-label="Elevated tree-house foundation"><span class="pt-price">{esc(PRICES[n]["elevated"])}</span></td><td data-label="Construction deposit"><span class="pt-deposit">{esc(PRICES[n]["deposit"])}</span></td><td class="pt-action"><a class="button button-secondary" href="contact.html?model={n.replace(" ", "+")}">Ask about {esc(n)}</a></td></tr>' for k, n in MODELS)
     body = f'''<section class="page-intro"><div class="container"><nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="index.html">Home</a></li><li aria-current="page">Pricing &amp; financing</li></ol></nav>
 <h1>Pricing &amp; financing</h1><p class="lead">Compare the starting price of all five models on a block or elevated tree-house foundation, plus the construction deposit. Financing options from our lending partner follow the pricing.</p>
 <p>{tlink('See lender options', '#lender')}</p></div></section>
-<section class="section section-tight"><div class="container"><div class="table-wrap"><table class="price-table"><caption>Model pricing</caption>
-<thead><tr><th scope="col">Model</th><th scope="col">Block foundation</th><th scope="col">Elevated tree-house foundation</th><th scope="col">Construction deposit</th><th scope="col"><span class="visually-hidden">Inquiry</span></th></tr></thead><tbody>{rows}</tbody></table></div>
-<div class="terms card"><h2 class="h3">Price terms</h2><div class="prose">{TERMS}</div></div></div></section>
-<section class="section section-soft" id="lender"><div class="container lender"><div class="card lender-card"><img src="{esc(im(logo))}" alt="Foundation Mortgage logo" class="lender-logo" width="220" height="110">
-<div><h2>{esc(rt[0] if rt else 'Financing')}</h2>{''.join(f'<p>{esc(t)}</p>' for t in rt[1:])}<p class="note">Lending is provided by a third party. Program terms depend on eligibility and project details. The application opens the lender’s site.</p><div class="button-row">{lb}</div></div></div></div></section>
+<section class="section section-tight"><div class="container"><h2 class="h2">Model pricing</h2><div class="table-wrap"><table class="price-table"><caption class="visually-hidden">Model pricing</caption>
+<thead><tr><th scope="col">Model</th><th scope="col"><i class="fa-solid fa-cubes"></i> Block foundation</th><th scope="col"><i class="fa-solid fa-tree"></i> Elevated tree-house</th><th scope="col"><i class="fa-solid fa-hand-holding-dollar"></i> Deposit</th><th scope="col"><span class="visually-hidden">Inquiry</span></th></tr></thead><tbody>{rows}</tbody></table></div>
+<div class="terms-panel terms-wide" data-reveal><h3>Price terms</h3><ul class="terms-list">{TERMS_LI}</ul></div></div></section>
+<section class="section section-soft" id="lender"><div class="container lender"><div class="card lender-card"><div class="lender-logo-wrap"><img src="{esc(im(logo))}" alt="Foundation Mortgage logo" width="300" height="300"></div>
+<div class="lender-body"><span class="pill"><i class="fa-solid fa-building-columns"></i> Lending partner</span><h2>{esc(rt[0] if rt else 'Financing')}</h2>{''.join(f'<p>{esc(t)}</p>' for t in rt[1:])}<p class="note">Lending is provided by a third party. Program terms depend on eligibility and project details. The application opens the lender’s site.</p><div class="button-row">{lb}</div></div></div></div></section>
 <section class="section"><div class="container split-even align-center"><div><h2>Talk through your budget</h2><p>Questions about what is included, foundation choices or deposit timing? Carly can walk you through them.</p></div><div class="button-row">{button('Discuss my budget', 'contact.html')}{button('Explore models', 'index.html#models', 'secondary')}</div></div></section>'''
     return shell('financing.html', 'Pricing & financing | Builds by Carly', body, 'Starting prices for the Juniper, Lily, Laurel Loft, Azalea and Iris on block and elevated foundations, plus deposit terms and financing.')
 
@@ -339,13 +347,13 @@ def process():
     for m in r0:
         if m['type'] == 'heading' and m['text'].strip().upper().startswith('STEP'): cur = [m['text'].strip().title(), '']; steps.append(cur)
         elif m['type'] == 'rich-text' and cur and not cur[1]: cur[1] = plain(m['html'])
-    sh = ''.join(f'<li class="step"><span class="step-no">{i}</span><h2 class="card-title">{esc(t)}</h2><p class="note">{esc(n)}</p></li>' for i, (n, t) in enumerate(steps, 1))
+    sh = ''.join(f'<li class="t-step" data-reveal><span class="t-node">{i}</span><div class="t-card"><h2 class="card-title">{esc(t)}</h2><span class="label">{esc(n)}</span></div></li>' for i, (n, t) in enumerate(steps, 1))
     r1 = list(flat(D['get-on-our-list']['rows'][1]))
     fi = plain(next(m['html'] for m in r1 if m['type'] == 'rich-text' and len(plain(m['html'])) > 60))
     body = f'''<section class="page-intro"><div class="container"><nav class="breadcrumb" aria-label="Breadcrumb"><ol><li><a href="index.html">Home</a></li><li aria-current="page">How it works</li></ol></nav>
 <h1>How your build comes together</h1><p class="lead">{esc(intro)}</p><div class="button-row">{button('Start your project', '#application')}{button('Compare pricing', 'financing.html', 'secondary')}</div></div></section>
-<section class="section section-tight"><div class="container"><ol class="steps steps-6">{sh}</ol></div></section>
-<section class="section section-soft"><div class="container"><p class="intro">{esc(fi)}</p>{list_form()}</div></section>
+<section class="section section-tight"><div class="container"><ol class="timeline">{sh}</ol></div></section>
+<section class="section section-soft"><div class="container form-wrap"><p class="intro">{esc(fi)}</p>{list_form()}</div></section>
 {closing_cta()}'''
     return shell('get-on-our-list.html', 'How it works | Builds by Carly', body, words(intro, 26))
 
@@ -473,7 +481,7 @@ ICONS = {'Site-built construction': 'helmet-safety', 'Foundation options': 'laye
          'Discuss the project': 'comments', 'Match land and model': 'map', 'Build and prepare for ownership': 'hammer',
          'Apply to Get Started': 'file-pen', 'Personalized Land Search Begins': 'magnifying-glass-location', 'Land Secured – Initial Deposit Due': 'handshake',
          'Select Your Tiny Home Model': 'house', 'Sign Agreement – Final Deposit Due': 'file-signature', 'Construction Begins': 'person-digging'}
-RIDGE = '<svg class="ridge" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true"><path d="M0 120V70l120-38 90 26 140-52 110 40 95-30 160 58 120-44 105 30 150-56 120 46 110-28 120 40v48z" fill="currentColor"/></svg>'
+RIDGE = '<svg class="ridge" viewBox="0 0 1440 120" preserveAspectRatio="none" aria-hidden="true"><path d="M0 120V70l120-38 90 26 140-52 110 40 95-30 160 58 120-44 105 30 150-56 120 46 110-28 120 40V120z" fill="currentColor"/></svg>'
 
 def generic(key):
     fn, title = B.PAGES[key]
